@@ -14,9 +14,12 @@ class Knight:
 
     def _move_is_valid(self, steps_x, steps_y):        
         '''Check if the move is valid for a knight'''
-        if (abs(self.position[0] + steps_x) == 2 and abs(self.position[1] + steps_y) == 1) or \
-           (abs(self.position[0] + steps_x) == 1 and abs(self.position[1] + steps_y) == 2):
-            return True
-        return False
+        if (abs(steps_x) == 2 and abs(steps_y) == 1) or (abs(steps_x) == 1 and abs(steps_y) == 2):
+            if self.position[0] + steps_x >= 0 and self.position[1] + steps_y >= 0:
+                # Assuming the board is 8x8, adjust as necessary
+                if self.position[0] + steps_x < 8 and self.position[1] + steps_y < 8:
+                 return True
+        return False 
+
 
 

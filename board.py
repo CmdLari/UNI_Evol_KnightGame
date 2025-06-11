@@ -16,5 +16,7 @@ class Board:
     
     def place_knight(self, position: list) -> bool:
         '''Place a knight on the board at the given position if valid'''
-        if self.is_valid_position(position):
+        if self._is_valid_position(position):
             self.matrix[position[1]][position[0]] = 1
+            return True
+        return False
