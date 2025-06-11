@@ -28,7 +28,7 @@ class Main:
                 if event.type == pygame.QUIT:
                     self.running = False
                 elif event.type == pygame.KEYDOWN:
-                # Use keys to move like a knight
+                #TODO: more intuitive controls
                     if event.key == pygame.K_q:   # Move 2 up, 1 left
                         self.knight.move(-1, -2)
                     elif event.key == pygame.K_w: # Move 2 up, 1 right
