@@ -2,6 +2,7 @@ import pygame
 
 from board import Board
 from knight import Knight
+from utils import load_image
 
 class Main:
     def __init__(self):
@@ -15,8 +16,10 @@ class Main:
 
         self.board = Board(8, 8)
         self.knight = Knight([0, 0])
-
-        self.knight_image = pygame.image.load("knight.png")
+        self.knight_image = load_image("knight_image.png", (50, 50))
+        if not self.knight_image:
+            print("Failed to load knight image. Please ensure 'knight_image.png' exists.")
+            self.running = False
         self.knight_image = pygame.transform.scale(self.knight_image, (50, 50))
 
     def run(self):
