@@ -5,6 +5,7 @@ class Knight:
         '''Initialize the knight with a position on the board'''
         self.position = position
         self.board_size = board_size
+        self.visited_positions = set()  
 
     def move(self, steps_x, steps_y):
         '''Move the knight by the specified steps in x and y direction'''
@@ -12,6 +13,7 @@ class Knight:
         if self._move_is_valid(steps_x, steps_y):
             self.position[0]+=steps_x
             self.position[1]+=steps_y
+            self.visited_positions.add(tuple(self.position))
 
     def _move_is_valid(self, steps_x, steps_y):        
         '''Check if the move is valid for a knight'''
