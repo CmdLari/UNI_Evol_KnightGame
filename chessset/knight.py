@@ -1,7 +1,7 @@
 import pygame
 from typing import List, Optional
 
-from utils import load_image
+from chessset.utils import load_image
 
 class Knight:
     '''Knight object to be moved across the board'''

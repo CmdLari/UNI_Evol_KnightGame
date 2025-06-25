@@ -1,20 +1,20 @@
 import pygame
 import random
 from typing import List
-
-from utils import load_image
-from knight import Knight
 from typing import Optional, Tuple, Set
-from field import Field
+
+from chessset.utils import load_image
+from chessset.knight import Knight
+from chessset.field import Field
 
 class Board:
-    def __init__(self, screen: pygame.Surface, width: int, height: int) -> None:
+    def __init__(self, screen: pygame.Surface, width: int, height: int, starting_position: List[int]) -> None:
         '''Initialize the board with given width and height'''
         self.width: int = width
         self.height: int = height
         self.screen: pygame.Surface = screen
         self.matrix: List[List[Field]] = [[0 for _ in range(width)] for _ in range(height)]
-        self._create_fields()
+        self._create_fields(starting_position)
         self.visited_positions: Set[Tuple[int, int]] = set()
 
         self.visited_image: Optional[pygame.Surface] = load_image("visited.png", (50, 50))
@@ -42,18 +42,16 @@ class Board:
                     self.screen.blit(knight.image, (knight_x * 50, knight_y * 50))
 
 
-    def _create_fields(self) -> None:
-        '''Create fields for the board'''
-        cntr: int = 0
+    def _create_fields(self, knight_start: Tuple[int, int]) -> None:
+        '''Create fields for the board with randomized but usable obstacle layout'''
         for row in range(self.height):
             for col in range(self.width):
                 is_light = (row + col) % 2 == 0
-                self.matrix[row][col] = Field(col, row, is_light)
-                rndy: int = 0
-                if cntr <= self.width // 2:
-                    cntr += 1
-                    rndy = random.randint(0, 100)
-                    if rndy <= 10:
-                        self.matrix[row][col].is_obstacle = True
-                else:
-                    self.matrix[row][col].is_obstacle = False
+                field = Field(col, row, is_light)
+
+                if (col, row) != knight_start:
+                    if random.random() < 0.07:  # ~7% chance
+                        field.is_obstacle = True
+
+                self.matrix[row][col] = field
+

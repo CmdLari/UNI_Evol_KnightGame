@@ -1,6 +1,6 @@
 import pygame
 from typing import Optional, Tuple
-from utils import load_image
+from chessset.utils import load_image
 
 class Field:
     '''Field represents each square on the board'''
@@ -8,7 +8,7 @@ class Field:
     def __init__(self, position_x: int, position_y: int, is_light: bool) -> None:
         self.position_x = position_x
         self.y = position_y
-        self.is_light = is_light  # Move this line up
+        self.is_light = is_light
         self.name = self._get_name()
         self.image = self._get_image()
         self.is_obstacle = False
