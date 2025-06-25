@@ -13,11 +13,12 @@ class Main:
         pygame.init()
 
         # Set up base parameters
-        self.BOARD_WIDTH: int = 8
-        self.BOARD_HEIGHT: int = 8
+        self.BOARD_WIDTH: int = 4
+        self.BOARD_HEIGHT: int = 4
+        self.OBSTACLES: bool = False
 
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
-        self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
+        self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 20
         self.MUTATION_FACTOR: float = 0.8
         self.CROSSOVER_RATE: float = 0.9
 
@@ -36,7 +37,7 @@ class Main:
         self.clock: pygame.time.Clock = pygame.time.Clock()
         self.running: bool = True
 
-        self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position)
+        self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position, self.OBSTACLES)
         self.knight: Knight = Knight(self.starting_position, self.BOARD_WIDTH, self.BOARD_HEIGHT)
 
         self.max_steps = 100  # or any step cap
@@ -44,6 +45,7 @@ class Main:
         self.de = DifferentialEvolution(self.problem, self.POPULATION_SIZE, self.MUTATION_FACTOR, self.CROSSOVER_RATE, self.GENERATIONS)
         self.best_path = []
         self.current_step = 0
+        self.is_over: bool = False
 
     def run(self) -> None:
         while self.running:
@@ -57,11 +59,18 @@ class Main:
                 self.knight.move(dx, dy, self.board)
                 self.current_step += 1
             else:
-                # print "Game Over" in screen centre
-                font = pygame.font.Font(None, 74)
-                text = font.render("Game Ended", True, (0, 0, 0))
+                self.is_over = True
+            if self.is_over:
+                font = pygame.font.Font("assets\Jersey10-Regular.ttf", 35)
+                text = font.render("XO", True, (215, 228, 222))
                 text_rect = text.get_rect(center=(self.BOARD_WIDTH * 25, self.BOARD_HEIGHT * 25))
+                textbg_rect = pygame.Rect(
+                    text_rect.x - 10, text_rect.y - 10,
+                    text_rect.width + 20, text_rect.height + 20
+                )
+                self.screen.fill((42, 42, 30), textbg_rect)
                 self.screen.blit(text, text_rect)
+                
 
             pygame.display.flip()
             self.clock.tick(self.GENERATIONS/10) # Adjust speetd of the game to generation size

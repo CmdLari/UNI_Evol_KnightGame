@@ -21,6 +21,7 @@ class KnightTourProblem:
         position = self.knight.position.copy()
         visited = {tuple(position)}
 
+        ## TODO: This should relate to the knight's move logic
         for gene in vector:
             move_idx = int(gene * len(self.knight_moves)) % 8
             dx, dy = self.knight_moves[move_idx]
@@ -36,8 +37,6 @@ class KnightTourProblem:
             ):
                 position = [new_x, new_y]
                 visited.add(tuple(position))
-            else:
-                return float('inf')  # invalid move
 
         return -len(visited)  # more visited cells = better fitness
     

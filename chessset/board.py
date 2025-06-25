@@ -8,13 +8,13 @@ from chessset.knight import Knight
 from chessset.field import Field
 
 class Board:
-    def __init__(self, screen: pygame.Surface, width: int, height: int, starting_position: List[int]) -> None:
+    def __init__(self, screen: pygame.Surface, width: int, height: int, starting_position: List[int], with_obstacles: bool = False) -> None:
         '''Initialize the board with given width and height'''
         self.width: int = width
         self.height: int = height
         self.screen: pygame.Surface = screen
         self.matrix: List[List[Field]] = [[0 for _ in range(width)] for _ in range(height)]
-        self._create_fields(starting_position)
+        self._create_fields(starting_position, with_obstacles)
         self.visited_positions: Set[Tuple[int, int]] = set()
 
         self.visited_image: Optional[pygame.Surface] = load_image("visited.png", (50, 50))
@@ -42,16 +42,17 @@ class Board:
                     self.screen.blit(knight.image, (knight_x * 50, knight_y * 50))
 
 
-    def _create_fields(self, knight_start: Tuple[int, int]) -> None:
+    def _create_fields(self, knight_start: Tuple[int, int], with_obstacles: bool = False) -> None:
         '''Create fields for the board with randomized but usable obstacle layout'''
         for row in range(self.height):
             for col in range(self.width):
                 is_light = (row + col) % 2 == 0
                 field = Field(col, row, is_light)
-
-                if (col, row) != knight_start:
-                    if random.random() < 0.07:  # ~7% chance
-                        field.is_obstacle = True
+                
+                if with_obstacles:
+                    if (col, row) != knight_start:
+                        if random.random() < 0.07:  # ~7% chance
+                            field.is_obstacle = True
 
                 self.matrix[row][col] = field
 
