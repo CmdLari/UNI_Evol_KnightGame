@@ -1,81 +1,75 @@
 import pygame
+import random
+from typing import List
 
 from board import Board
 from knight import Knight
-from utils import load_image
 
 class Main:
-    def __init__(self):
+    def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
 
-        self.screen = pygame.display.set_mode((400, 400))
+        # Set up base parameters
+        self.BOARD_WIDTH: int = 20
+        self.BOARD_HEIGHT: int = 20
+        self.starting_position: List[int] = [
+            random.randint(0, self.BOARD_WIDTH - 1),
+            random.randint(0, self.BOARD_HEIGHT - 1)
+        ]
+
+        # Set up base game
+        self.screen: pygame.Surface = pygame.display.set_mode(
+            (self.BOARD_WIDTH * 50, self.BOARD_HEIGHT * 50)
+        )
         pygame.display.set_caption("Knight's Tour")
-        self.clock = pygame.time.Clock()
-        self.running = True
+        self.clock: pygame.time.Clock = pygame.time.Clock()
+        self.running: bool = True
 
-        self.board = Board(8, 8)
-        self.knight = Knight([0, 0])
-        self.knight_image = load_image("knight_image.png", (50, 50))
-        if not self.knight_image:
-            print("Failed to load knight image. Please ensure 'knight_image.png' exists.")
-            self.running = False
-        self.knight_image = pygame.transform.scale(self.knight_image, (50, 50))
+        self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT)
+        self.knight: Knight = Knight(self.starting_position, self.BOARD_WIDTH, self.BOARD_HEIGHT)
 
-    def run(self):
+    def run(self) -> None:
         while self.running:
             self._check_events()
 
             self.screen.fill((255, 255, 255))
-            self._draw_board()
+            self.board.draw_board(self.knight)
 
             pygame.display.flip()
             self.clock.tick(60)
 
-    def _draw_board(self):
-        '''Draw the board on the screen'''
-        for row in range(self.board.height):
-            for col in range(self.board.width):
-                color = (200, 200, 200) if (row + col) % 2 == 0 else (100, 100, 100)
-                pygame.draw.rect(self.screen, color, (col * 50, row * 50, 50, 50))
-        for row in range(self.board.height):
-            for col in range(self.board.width):
-                # Draw the visited positions
-                if (col, row) in self.knight.visited_positions:
-                    pygame.draw.circle(self.screen, (255, 0, 0), (col * 50 + 25, row * 50 + 25), 10)
-
-        #draw knight
-        kx, ky = self.knight.position
-        pixel_x = kx * 50
-        pixel_y = ky * 50
-        self.screen.blit(self.knight_image, (pixel_x, pixel_y))
-
-
-    def _check_events(self):
+    def _check_events(self) -> None:
         '''Check for events and handle them'''
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
             elif event.type == pygame.KEYDOWN:
-                #TODO: more intuitive controls
-                if event.key == pygame.K_q:   # Move 2 up, 1 left
-                    self.knight.move(-1, -2)
-                elif event.key == pygame.K_w: # Move 2 up, 1 right
-                    self.knight.move(1, -2)
-                elif event.key == pygame.K_a: # Move 2 left, 1 up
-                    self.knight.move(-2, -1)
-                elif event.key == pygame.K_s: # Move 2 left, 1 down
-                    self.knight.move(-2, 1)
-                elif event.key == pygame.K_e: # Move 2 up, 1 right
-                    self.knight.move(2, -1)
-                elif event.key == pygame.K_d: # Move 2 right, 1 up
-                    self.knight.move(2, 1)
-                elif event.key == pygame.K_z: # Move 1 down, 2 left
-                    self.knight.move(-1, 2)
-                elif event.key == pygame.K_x: # Move 1 down, 2 right
-                    self.knight.move(1, 2)
+                # TODO: more intuitive controls
+                if event.key == pygame.K_q:
+                    change = (-1, -2)
+                elif event.key == pygame.K_w:
+                    change = (1, -2)
+                elif event.key == pygame.K_a:
+                    change = (-2, -1)
+                elif event.key == pygame.K_s:
+                    change = (-2, 1)
+                elif event.key == pygame.K_e:
+                    change = (2, -1)
+                elif event.key == pygame.K_d:
+                    change = (2, 1)
+                elif event.key == pygame.K_z:
+                    change = (-1, 2)
+                elif event.key == pygame.K_x:
+                    change = (1, 2)
                 if event.key == pygame.K_ESCAPE:
                     self.running = False
+                self.knight.move(change[0], change[1], self.board)
+
+    def _draw_board(self) -> None:
+        '''Draws the board and knight (placeholder function)'''
+        self.board.draw()
+        self.knight.draw(self.screen)
 
 if __name__ == "__main__":
     game = Main()

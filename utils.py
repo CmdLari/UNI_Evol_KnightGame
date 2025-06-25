@@ -1,10 +1,11 @@
 import pygame
+from typing import Optional, Tuple, Dict
 
-image_cache = {}
+image_cache: Dict[str, pygame.Surface] = {}
 
-def load_image(image_path, size=None):
+def load_image(image_path: str, size: Optional[Tuple[int, int]] = None) -> Optional[pygame.Surface]:
     """Load an image from the given path and optionally resize it."""
-    image_path = f"assets/{image_path}"  # Normalize the path to lower case
+    image_path = f"assets/{image_path}"
     if image_path in image_cache:
         return image_cache[image_path]
 
