@@ -13,12 +13,14 @@ class Main:
         pygame.init()
 
         # Set up base parameters
-        self.POPULATION_SIZE: int = 50
-        self.GENERATIONS: int = 100
+        self.BOARD_WIDTH: int = 8
+        self.BOARD_HEIGHT: int = 8
+
+        self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
+        self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.MUTATION_FACTOR: float = 0.8
         self.CROSSOVER_RATE: float = 0.9
-        self.BOARD_WIDTH: int = 20
-        self.BOARD_HEIGHT: int = 20
+
 
         # Randomly select a starting position for the knight
         self.starting_position: List[int] = [
@@ -47,24 +49,33 @@ class Main:
         while self.running:
             self._check_events()
 
+            self.screen.fill((255, 255, 255))
+            self.board.draw_board(self.knight)
+        
             if self.current_step < len(self.best_path):
                 dx, dy = self.best_path[self.current_step]
                 self.knight.move(dx, dy, self.board)
                 self.current_step += 1
-
-            self.screen.fill((255, 255, 255))
-            self.board.draw_board(self.knight)
+            else:
+                # print "Game Over" in screen centre
+                font = pygame.font.Font(None, 74)
+                text = font.render("Game Ended", True, (0, 0, 0))
+                text_rect = text.get_rect(center=(self.BOARD_WIDTH * 25, self.BOARD_HEIGHT * 25))
+                self.screen.blit(text, text_rect)
 
             pygame.display.flip()
-            self.clock.tick(4)
+            self.clock.tick(self.GENERATIONS/10) # Adjust speetd of the game to generation size
 
     def _check_events(self) -> None:
         '''Check for events and handle them'''
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
+
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    self.running = False
             ### OPTION TO MOVE THE KNIGHT USING KEYS###
-            # elif event.type == pygame.KEYDOWN:
             #     if event.key == pygame.K_q:
             #         change = (-1, -2)
             #     elif event.key == pygame.K_w:
@@ -82,8 +93,7 @@ class Main:
             #     elif event.key == pygame.K_x:
             #         change = (1, 2)
             #     self.knight.move(change[0], change[1], self.board)
-                if event.key == pygame.K_ESCAPE:
-                    self.running = False
+
                 
 
     def _draw_board(self) -> None:
@@ -101,5 +111,5 @@ class Main:
 if __name__ == "__main__":
     game = Main()
     game.solve_with_de()
-    game.run()  # ← this was missing
+    game.run()
     pygame.quit()
