@@ -21,6 +21,8 @@ class KnightTourProblem:
         position = self.knight.position.copy()
         visited = {tuple(position)}
 
+        print(f"Start position: {position}")
+
         ## TODO: This should relate to the knight's move logic
         for gene in vector:
             move_idx = int(gene * len(self.knight_moves)) % 8
@@ -33,11 +35,16 @@ class KnightTourProblem:
             if (
                 0 <= new_x < self.board.width and
                 0 <= new_y < self.board.height and
-                not self.board.matrix[new_y][new_x].is_obstacle
+                not self.board.matrix[new_y][new_x].is_obstacle and
+                (new_x, new_y) not in visited
             ):
                 position = [new_x, new_y]
                 visited.add(tuple(position))
+                print(f"Moved to: {position}, visited count: {len(visited)}")
+            else:
+                print(f"Move blocked or revisited at: {(new_x, new_y)}")
 
+        print(f"Final visited count: {len(visited)}")
         return -len(visited)  # more visited cells = better fitness
     
     def decode_vector_to_moves(self, vector: List[float]) -> List[Tuple[int, int]]:

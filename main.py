@@ -8,15 +8,15 @@ from differentialEvolution.differentialEvolution import DifferentialEvolution
 from knightTourProblem import KnightTourProblem
 
 class Main:
+    BOARD_SIZE = 8
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
 
         # Set up base parameters
-        self.BOARD_WIDTH: int = 4
-        self.BOARD_HEIGHT: int = 4
+        self.BOARD_WIDTH = self.BOARD_SIZE
+        self.BOARD_HEIGHT = self.BOARD_SIZE
         self.OBSTACLES: bool = False
-
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 20
         self.MUTATION_FACTOR: float = 0.8
@@ -105,10 +105,10 @@ class Main:
 
                 
 
-    def _draw_board(self) -> None:
-        '''Draws the board and knight (placeholder function)'''
-        self.board.draw()
-        self.knight.draw(self.screen)
+#    def _draw_board(self) -> None:
+#        '''Draws the board and knight (placeholder function)'''
+#        self.board.draw()
+#        self.knight.draw(self.screen)
 
     def solve_with_de(self) -> None:
         self.de.run()
