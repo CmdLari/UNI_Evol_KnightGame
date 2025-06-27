@@ -57,3 +57,29 @@ STEPSIZE_PARAM (F): mutation scaling factor
 STEPS: number of moves per individual
 
 You can adjust these in main.py.
+
+## TO-DOs
+
+- Should the knight **stop early** if all tiles have been visited?
+
+- Create a **simulation factory** to run large batches automatically
+
+  - Make visualization **optional**
+
+- **Export results** to `.txt`, `.csv`, or other formats
+
+- Compare DE performance when varying **one parameter at a time**:
+
+  - Population size
+  - Number of generations
+  - Step size (`F`)
+  - Crossover rate (`CR`)
+  - Number of knight steps
+
+- Evaluate best configurations across:
+
+  - 3 different board sizes
+  - Obstacle mode: `obstacles = True`
+
+- Implement **elitism**
+- Repeat all above benchmarks with elitism enabled
