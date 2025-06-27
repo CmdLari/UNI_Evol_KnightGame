@@ -39,12 +39,14 @@ Fitness is calculated based on:
 
 - Valid moves
 - New tiles visited
+- all tiles have been visited
 
 ### Negative
 
 - Re-visiting tiles
 - Hitting obstacles
 - Going off the board
+- unnecessarily high number of moves
 
 ## Parameters
 
@@ -61,10 +63,6 @@ STEPS: number of moves per individual
 You can adjust these in main.py.
 
 ## TO-DOs
-
-- Create a **simulation factory** to run large batches automatically
-
-- **Visualize** (Potentially via Numpy?) the results (Take Average of Big Numbers)
 
 - Compare DE performance when varying **one parameter at a time**:
 

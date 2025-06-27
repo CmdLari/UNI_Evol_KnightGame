@@ -3,7 +3,7 @@ import random
 from typing import List
 from typing import Optional, Tuple
 
-from chessset.utils import load_image
+from utils import load_image
 from chessset.field import Field
 
 class Board:

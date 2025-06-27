@@ -1,6 +1,6 @@
 import pygame
 from typing import List, Optional, Tuple
-from chessset.utils import load_image
+from utils import load_image
 
 class Individual:
     """Represents an individual/knight in the population for the knight's tour problem."""
@@ -40,6 +40,7 @@ class Individual:
                 if not tile.is_obstacle:
                     self.position = [new_x, new_y]
                     tile = board.matrix[new_y][new_x]
+                    self.fitness += 1  # Reward for valid move
                 else:
                     self.fitness -= 2
                 if self.position not in self.visited_tiles:

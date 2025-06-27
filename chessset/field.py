@@ -1,7 +1,6 @@
 import pygame
 from typing import Optional, Tuple
-from chessset.utils import load_image
-
+from utils import load_image
 class Field:
     '''Field represents each square on the board'''
 

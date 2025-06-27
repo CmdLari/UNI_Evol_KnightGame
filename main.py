@@ -2,13 +2,14 @@ import pygame
 import random
 from typing import List
 
-from chessset.utils import (draw_board, save_results_to_json)
+from utils import (draw_board, save_results_to_json)
 from chessset.board import Board
 from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
     BOARD_SIZE = 8
+    NUMBER_OF_RUNS = 1
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -101,19 +102,21 @@ class Main:
 
 if __name__ == "__main__":
     game = Main()
-    game.solve_with_de()
-    # game.visualize() # Comment this line to skip visualization
-    save_results_to_json(f"BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
-        "board_size": game.BOARD_HEIGHT * game.BOARD_WIDTH,
-        "obstacles": game.OBSTACLES,
-        "population_size": game.POPULATION_SIZE,
-        "generations": game.GENERATIONS,
-        "stepsize_param": game.STEPSIZE_PARAM,
-        "crossover_rate": game.CROSSOVER_RATE,
-        "steps": game.STEPS,
-        "best_fitness": game.de.best.fitness,
-        "worst_fitness": game.de.worst.fitness,
-        "average_fitness": sum(ind.fitness for ind in game.de.population.individuals) / len(game.de.population.individuals),
-        "best_attempted_moves": game.de.best.attempted_moves
-    })
+    for _ in range(game.NUMBER_OF_RUNS):
+        game.solve_with_de()
+        save_results_to_json(f"BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
+            "board_size": game.BOARD_HEIGHT * game.BOARD_WIDTH,
+            "obstacles": game.OBSTACLES,
+            "population_size": game.POPULATION_SIZE,
+            "generations": game.GENERATIONS,
+            "stepsize_param": game.STEPSIZE_PARAM,
+            "crossover_rate": game.CROSSOVER_RATE,
+            "steps": game.STEPS,
+            "best_fitness": game.de.best.fitness,
+            "worst_fitness": game.de.worst.fitness,
+            "average_fitness": sum(ind.fitness for ind in game.de.population.individuals) / len(game.de.population.individuals),
+            "best_attempted_moves": game.de.best.attempted_moves
+        })
+        game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
+    game.visualize() # Comment this line to skip visualization
     pygame.quit()
