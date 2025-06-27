@@ -2,6 +2,7 @@ import pygame
 import random
 from typing import List
 
+from chessset.utils import draw_board
 from chessset.board import Board
 from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
@@ -15,7 +16,7 @@ class Main:
         # Set up base parameters
         self.BOARD_WIDTH = self.BOARD_SIZE
         self.BOARD_HEIGHT = self.BOARD_SIZE
-        self.OBSTACLES: bool = False
+        self.OBSTACLES: bool = True
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.STEPSIZE_PARAM = 0.5
@@ -28,15 +29,7 @@ class Main:
             random.randint(0, self.BOARD_HEIGHT - 1)
         ]
 
-        # Set up base game
-        self.screen: pygame.Surface = pygame.display.set_mode(
-            (self.BOARD_WIDTH * 50, self.BOARD_HEIGHT * 50)
-        )
-        pygame.display.set_caption("Knight's Tour")
-        self.clock: pygame.time.Clock = pygame.time.Clock()
-        self.running: bool = True
-
-        self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position, self.OBSTACLES)
+        self.board: Board = Board(self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position, self.OBSTACLES)
 
         ## SHOW PONY ##
         self.knight: Individual = None
@@ -46,13 +39,21 @@ class Main:
         self.current_step = 0
         self.is_over: bool = False
 
-    def run(self) -> None:
+    def visualize(self) -> None:
+        # Set up base game
+        self.screen: pygame.Surface = pygame.display.set_mode(
+            (self.BOARD_WIDTH * 50, self.BOARD_HEIGHT * 50)
+        )
+        pygame.display.set_caption("Knight's Tour")
+        self.clock: pygame.time.Clock = pygame.time.Clock()
+        self.running: bool = True
+
         ctr = 0
         while self.running:
             self._check_events()
 
             self.screen.fill((255, 255, 255))
-            self.board.draw_board(self.knight, ctr)
+            draw_board(self.screen, self.board,self.knight, ctr)
             if not self.is_over and ctr < len(self.best_path)-1:
                 ctr += 1
 
@@ -91,8 +92,8 @@ class Main:
         self.de.run()
         print("Best fitness:", self.de.best.fitness)
         print("Worst fitness:", self.de.worst.fitness)
-        print(self.de.best.visited_tiles)
-        print(self.de.worst.visited_tiles)
+        print ("Average fitness:", sum(ind.fitness for ind in self.de.population.individuals) / len(self.de.population.individuals))
+        print (self.de.best.attempted_moves)
         self.knight = self.de.best
         self.best_path = self.de.best.visited_tiles
         self.knight.position = self.starting_position.copy()
@@ -101,5 +102,5 @@ class Main:
 if __name__ == "__main__":
     game = Main()
     game.solve_with_de()
-    game.run()
+    game.visualize() # Comment this line to skip visualization
     pygame.quit()

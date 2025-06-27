@@ -60,13 +60,13 @@ You can adjust these in main.py.
 
 ## TO-DOs
 
-- Should the knight **stop early** if all tiles have been visited?
-
 - Create a **simulation factory** to run large batches automatically
 
-  - Make visualization **optional**
-
 - **Export results** to `.txt`, `.csv`, or other formats
+
+  - results should contain: [Obstacles Y/N | Board-Size | Population Size | Number of Generations | Step Size | Crossover Rate | Number of Steps | Best Fitness | Worst Fitness | Average Fitness]
+
+- **Visualize** (Potentially via Numpy?) the results (Take Average of Big Numbers)
 
 - Compare DE performance when varying **one parameter at a time**:
 

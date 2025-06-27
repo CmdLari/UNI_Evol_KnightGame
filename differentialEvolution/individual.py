@@ -4,7 +4,7 @@ from chessset.utils import load_image
 
 class Individual:
     """Represents an individual/knight in the population for the knight's tour problem."""
-    def __init__(self, vector: List[float], starting_position: List[int], board_width: int, board_height: int) -> None:
+    def __init__(self, vector: List[float], starting_position: List[int], board_width: int, board_height: int, board) -> None:
         self.vector: List[float] = vector  # Float vector [0.0, 1.0]
         self.starting_position: List[int] = starting_position.copy()
         self.position: List[int] = starting_position.copy()
@@ -17,6 +17,10 @@ class Individual:
             (2, 1), (1, 2), (-1, 2), (-2, 1)
         ]
         self.image: Optional[pygame.Surface] = self._get_image()
+        self.total_visitable = sum(
+                not tile.is_obstacle for row in board.matrix for tile in row
+            )
+        self.attempted_moves: int = 0
 
     def evaluate(self, board) -> float:
         """Evaluate fitness by simulating knight moves from the vector."""
@@ -25,6 +29,7 @@ class Individual:
         self.visited_tiles = [self.position.copy()]
 
         for gene in self.vector:
+            self.attempted_moves += 1
             move_idx = int(gene * 8) % 8
             dx, dy = self.knight_moves[move_idx]
             new_x = self.position[0] + dx
@@ -45,9 +50,14 @@ class Individual:
             else:
                 self.fitness -= 4  # Strong penalty for going off board
 
-        # Reward for visiting all tiles
-        if len(self.visited_tiles) == self.board_width * self.board_height:
-            self.fitness += 100
+            # Punish for too many moves
+            if self.attempted_moves > self.total_visitable:
+                self.fitness -= (self.attempted_moves - self.total_visitable)
+
+            # Reward for visiting all tiles
+            if len(self.visited_tiles) == self.total_visitable:
+                self.fitness += 1000
+                break
 
         return self.fitness
 

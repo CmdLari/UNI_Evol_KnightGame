@@ -44,7 +44,7 @@ class DifferentialEvolution:
                 ]
 
                 # --- Evaluation ---
-                trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height)
+                trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height, self.board)
                 trial.evaluate(self.board)
 
                 # --- Selection ---
