@@ -20,7 +20,7 @@ class Main:
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.STEPSIZE_PARAM = 0.5
         self.CROSSOVER_RATE: float = 0.9
-        self.STEPS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 2
+        self.STEPS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 5
 
         # Randomly select a starting position for the knight
         self.starting_position: List[int] = [
@@ -47,13 +47,15 @@ class Main:
         self.is_over: bool = False
 
     def run(self) -> None:
+        ctr = 0
         while self.running:
             self._check_events()
 
             self.screen.fill((255, 255, 255))
-            self.board.draw_board(self.knight)
-            self.knight.draw_knight(self.screen)
-        
+            self.board.draw_board(self.knight, ctr)
+            if not self.is_over and ctr < len(self.best_path)-1:
+                ctr += 1
+
             if self.current_step < len(self.best_path):
                 dx, dy = self.best_path[self.current_step]
                 self.knight.move_for_show(dx, dy)
@@ -62,7 +64,7 @@ class Main:
                 self.is_over = True
             if self.is_over:
                 font = pygame.font.Font("assets\Jersey10-Regular.ttf", 35)
-                text = font.render("XO", True, (215, 228, 222))
+                text = font.render("DONE", True, (215, 228, 222))
                 text_rect = text.get_rect(center=(self.BOARD_WIDTH * 25, self.BOARD_HEIGHT * 25))
                 textbg_rect = pygame.Rect(
                     text_rect.x - 10, text_rect.y - 10,

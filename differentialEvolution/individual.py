@@ -3,6 +3,7 @@ from typing import List, Optional, Tuple
 from chessset.utils import load_image
 
 class Individual:
+    """Represents an individual/knight in the population for the knight's tour problem."""
     def __init__(self, vector: List[float], starting_position: List[int], board_width: int, board_height: int) -> None:
         self.vector: List[float] = vector  # Float vector [0.0, 1.0]
         self.starting_position: List[int] = starting_position.copy()
@@ -30,14 +31,15 @@ class Individual:
             new_y = self.position[1] + dy
 
             if 0 <= new_x < self.board_width and 0 <= new_y < self.board_height:
-                self.position = [new_x, new_y]
                 tile = board.matrix[new_y][new_x]
-
-                if tile.is_obstacle:
+                if not tile.is_obstacle:
+                    self.position = [new_x, new_y]
+                    tile = board.matrix[new_y][new_x]
+                else:
                     self.fitness -= 2
                 if self.position not in self.visited_tiles:
                     self.visited_tiles.append(self.position.copy())
-                    self.fitness += 4
+                    self.fitness += 10
                 else:
                     self.fitness -= 2
             else:

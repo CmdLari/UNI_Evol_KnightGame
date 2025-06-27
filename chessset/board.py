@@ -19,8 +19,11 @@ class Board:
         self.visited_image: Optional[pygame.Surface] = load_image("visited.png", (50, 50))
         self.obstacle_image: Optional[pygame.Surface] = load_image("obstacle_image.png", (50, 50))
 
-    def draw_board(self, knight: Individual) -> None:
+        self.visited_tiles = []
+
+    def draw_board(self, knight: Individual, ctr) -> None:
         '''Draw the board on the screen'''
+        
         for row in range(self.height):
             for col in range(self.width):
                 field_image = self.matrix[row][col].image
@@ -30,10 +33,12 @@ class Board:
                     obstacle_x, obstacle_y = col * 50, row * 50
                     if self.obstacle_image:
                         self.screen.blit(self.obstacle_image, (obstacle_x, obstacle_y))
-                if self.matrix[row][col] in knight.visited_tiles:
+                if [self.matrix[row][col].position_x, self.matrix[row][col].position_y] in self.visited_tiles:
                     visited_x, visited_y = col * 50, row * 50
                     if self.visited_image:
                         self.screen.blit(self.visited_image, (visited_x, visited_y))
+        self.visited_tiles.append(knight.visited_tiles[ctr])
+        knight.draw_knight(self.screen)
 
 
 

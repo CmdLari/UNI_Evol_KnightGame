@@ -7,7 +7,7 @@ class Field:
 
     def __init__(self, position_x: int, position_y: int, is_light: bool) -> None:
         self.position_x = position_x
-        self.y = position_y
+        self.position_y = position_y
         self.is_light = is_light
         self.name = self._get_name()
         self.image = self._get_image()
@@ -16,7 +16,7 @@ class Field:
 
     def _get_name(self) -> str:
         '''Generate a name for the field based on its position'''
-        return f"[{self.position_x}, {self.y}]"
+        return f"[{self.position_x}, {self.position_y}]"
     
     def _get_image(self) -> Tuple[Optional[pygame.Surface], Optional[pygame.Surface], Optional[pygame.Surface]]:
         '''Load the board images'''
