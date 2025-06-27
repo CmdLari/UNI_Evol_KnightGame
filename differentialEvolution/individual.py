@@ -1,86 +1,63 @@
-import random
-
 import pygame
-from typing import List, Optional, Set, Tuple
-
-from chessset.field import Field
+from typing import List, Optional, Tuple
 from chessset.utils import load_image
 
 class Individual:
-    def __init__(self, position, board_width, board_height) -> None:
-        '''Initialize the knight with a position on the board'''
-        self.image: Optional[pygame.Surface] = self._get_image()
-        self.fitness = 0
-        self.position: List[int] = position
+    def __init__(self, vector: List[float], starting_position: List[int], board_width: int, board_height: int) -> None:
+        self.vector: List[float] = vector  # Float vector [0.0, 1.0]
+        self.starting_position: List[int] = starting_position.copy()
+        self.position: List[int] = starting_position.copy()
         self.board_width: int = board_width
         self.board_height: int = board_height
-        self.image: Optional[pygame.Surface] = self._get_image()
-        self.visited_tiles = []
-        self.visited_tiles.append(self.position)
-        # List of movements
+        self.fitness: float = 0.0
+        self.visited_tiles: List[List[int]] = [self.position.copy()]
         self.knight_moves: List[Tuple[int, int]] = [
             (-2, -1), (-1, -2), (1, -2), (2, -1),
             (2, 1), (1, 2), (-1, 2), (-2, 1)
         ]
-        self.vector = []
+        self.image: Optional[pygame.Surface] = self._get_image()
+
+    def evaluate(self, board) -> float:
+        """Evaluate fitness by simulating knight moves from the vector."""
+        self.fitness = 0
+        self.position = self.starting_position.copy()
+        self.visited_tiles = [self.position.copy()]
+
+        for gene in self.vector:
+            move_idx = int(gene * 8) % 8
+            dx, dy = self.knight_moves[move_idx]
+            new_x = self.position[0] + dx
+            new_y = self.position[1] + dy
+
+            if 0 <= new_x < self.board_width and 0 <= new_y < self.board_height:
+                self.position = [new_x, new_y]
+                tile = board.matrix[new_y][new_x]
+
+                if tile.is_obstacle:
+                    self.fitness -= 2
+                if self.position not in self.visited_tiles:
+                    self.visited_tiles.append(self.position.copy())
+                    self.fitness += 4
+                else:
+                    self.fitness -= 2
+            else:
+                self.fitness -= 4  # Strong penalty for going off board
+
+        return self.fitness
 
     def move_for_show(self, dx, dy):
         '''Move the knight's move for show'''
-        self.position[0] += dx
-        self.position[1] += dy
-
-    def draw_knight(self, screen: pygame.Surface) -> None:
-        knight_x, knight_y = self.position
-        screen.blit(self.image, (knight_x * 50, knight_y * 50))
-
-    def move(self, board, steps) -> None:
-        '''Move the knight by the specified steps in x and y direction'''
-
-        for i in range(steps):
-            rnd: int = random.randint(0, len(self.knight_moves) - 1)
-            move_x = self.knight_moves[rnd][0]
-            move_y = self.knight_moves[rnd][1]
-
-            self.evaluate(board, move_x, move_y, rnd)
-
-    def evaluate(self, board, move_x, move_y, rnd):
-        new_position = self.position[0] + move_x, self.position[1] + move_y
-
-        if 0 <= new_position[0] < self.board_width and 0 <= new_position[1] < self.board_height:
-            is_valid_move = True
-            self.position = new_position
-        else:
-            is_valid_move = False
-
-        if is_valid_move:
-            self.vector.append(rnd)
-            board.matrix[self.position[1]][self.position[0]].has_knight = True
-
-        # REWARDS
-            self.fitness += 10
-            # new tile visited
-            if not new_position in self.visited_tiles:
-                self.visited_tiles.append(new_position)
-                self.fitness += 2
-
-        # PUNISHMENTS
-        # revisiting
-            else:
-                self.fitness -= 2
-        # out of bounds
-        if not is_valid_move:
-            self.fitness -= 2
-        # obstacle
-        if is_valid_move:
-            if board.matrix[self.position[1]][self.position[0]].is_obstacle:
-                self.fitness -= 2
-
-
+        self.position[0] = dx
+        self.position[1] = dy
 
     def _get_image(self) -> Optional[pygame.Surface]:
-        '''Load the knight image'''
         knight_image: Optional[pygame.Surface] = load_image("knight_image.png", (50, 50))
         if not knight_image:
-            print("Failed to load knight image. Please ensure 'knight_image.png' exists.")
+            print("Failed to load knight image.")
             return None
         return pygame.transform.scale(knight_image, (50, 50))
+
+    def draw_knight(self, screen: pygame.Surface) -> None:
+        x, y = self.position
+        if self.image:
+            screen.blit(self.image, (x * 50, y * 50))

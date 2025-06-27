@@ -7,7 +7,7 @@ from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
-    BOARD_SIZE = 3
+    BOARD_SIZE = 8
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -73,7 +73,7 @@ class Main:
                 
 
             pygame.display.flip()
-            self.clock.tick(60) # Adjust speed of the game to generation size
+            self.clock.tick(10) # Adjust speed of the game to generation size
 
     def _check_events(self) -> None:
         '''Check for events and handle them'''
