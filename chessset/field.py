@@ -12,7 +12,6 @@ class Field:
         self.name = self._get_name()
         self.image = self._get_image()
         self.is_obstacle = False
-        self.is_visited = False
         self.has_knight = False
 
     def _get_name(self) -> str:

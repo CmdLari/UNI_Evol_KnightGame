@@ -5,10 +5,9 @@ from typing import List
 from chessset.board import Board
 from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
-from knightTourProblem import KnightTourProblem
 
 class Main:
-    BOARD_SIZE = 8
+    BOARD_SIZE = 3
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -18,10 +17,10 @@ class Main:
         self.BOARD_HEIGHT = self.BOARD_SIZE
         self.OBSTACLES: bool = False
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
-        self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 20
-        self.MUTATION_FACTOR: float = 0.8
+        self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
+        self.STEPSIZE_PARAM = 0.5
         self.CROSSOVER_RATE: float = 0.9
-
+        self.STEPS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 2
 
         # Randomly select a starting position for the knight
         self.starting_position: List[int] = [
@@ -38,11 +37,11 @@ class Main:
         self.running: bool = True
 
         self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position, self.OBSTACLES)
-        self.knight: Individual = Individual(None, self.starting_position, self.BOARD_WIDTH, self.BOARD_HEIGHT)
 
-        self.max_steps = 100  # or any step cap
-        self.problem = KnightTourProblem(self.board, self.knight, self.max_steps)
-        self.de = DifferentialEvolution(self.problem, self.POPULATION_SIZE, self.MUTATION_FACTOR, self.CROSSOVER_RATE, self.GENERATIONS)
+        ## SHOW PONY ##
+        self.knight: Individual = None
+
+        self.de = DifferentialEvolution(self.POPULATION_SIZE, self.board, self.GENERATIONS, self.STEPSIZE_PARAM, self.CROSSOVER_RATE, self.STEPS)
         self.best_path = []
         self.current_step = 0
         self.is_over: bool = False
@@ -53,10 +52,11 @@ class Main:
 
             self.screen.fill((255, 255, 255))
             self.board.draw_board(self.knight)
+            self.knight.draw_knight(self.screen)
         
             if self.current_step < len(self.best_path):
                 dx, dy = self.best_path[self.current_step]
-                self.knight.move(dx, dy, self.board)
+                self.knight.move_for_show(dx, dy)
                 self.current_step += 1
             else:
                 self.is_over = True
@@ -73,7 +73,7 @@ class Main:
                 
 
             pygame.display.flip()
-            self.clock.tick(self.GENERATIONS/10) # Adjust speetd of the game to generation size
+            self.clock.tick(60) # Adjust speed of the game to generation size
 
     def _check_events(self) -> None:
         '''Check for events and handle them'''
@@ -84,36 +84,15 @@ class Main:
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     self.running = False
-            ### OPTION TO MOVE THE KNIGHT USING KEYS###
-            #     if event.key == pygame.K_q:
-            #         change = (-1, -2)
-            #     elif event.key == pygame.K_w:
-            #         change = (1, -2)
-            #     elif event.key == pygame.K_a:
-            #         change = (-2, -1)
-            #     elif event.key == pygame.K_s:
-            #         change = (-2, 1)
-            #     elif event.key == pygame.K_e:
-            #         change = (2, -1)
-            #     elif event.key == pygame.K_d:
-            #         change = (2, 1)
-            #     elif event.key == pygame.K_z:
-            #         change = (-1, 2)
-            #     elif event.key == pygame.K_x:
-            #         change = (1, 2)
-            #     self.knight.move(change[0], change[1], self.board)
-
-                
-
-#    def _draw_board(self) -> None:
-#        '''Draws the board and knight (placeholder function)'''
-#        self.board.draw()
-#        self.knight.draw(self.screen)
 
     def solve_with_de(self) -> None:
         self.de.run()
         print("Best fitness:", self.de.best.fitness)
-        self.best_path = self.problem.decode_vector_to_moves(self.de.best.vector)
+        print("Worst fitness:", self.de.worst.fitness)
+        print(self.de.best.visited_tiles)
+        print(self.de.worst.visited_tiles)
+        self.knight = self.de.best
+        self.best_path = self.de.best.visited_tiles
         self.knight.position = self.starting_position.copy()
         self.board.visited_positions = set()
 

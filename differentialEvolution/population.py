@@ -1,11 +1,10 @@
 from differentialEvolution.individual import Individual
 import random
-from typing import List, Tuple
 
 class Population:
-    def __init__(self, size, vector_length, bounds):
-        self.individuals = [self._random_individual(vector_length, bounds) for _ in range(size)]
+    def __init__(self, size, board):
+        self.individuals = [self._random_individual(board) for _ in range(size)]
 
-    def _random_individual(self, length, bounds):
-        vector = [random.uniform(bounds[i][0], bounds[i][1]) for i in range(length)]
-        return Individual(vector)
+    def _random_individual(self, board):
+        position = [random.randint(0, board.width - 1), random.randint(0, board.height - 1)]
+        return Individual(position, board.width, board.height )
