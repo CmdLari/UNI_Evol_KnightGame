@@ -1,12 +1,10 @@
 import pygame
 import random
 from typing import List
-from typing import Optional, Tuple, Set
+from typing import Optional, Tuple
 
 from chessset.utils import load_image
 from chessset.field import Field
-from differentialEvolution.individual import Individual
-
 
 class Board:
     def __init__(self, width: int, height: int, starting_position: List[int], with_obstacles: bool = False) -> None:

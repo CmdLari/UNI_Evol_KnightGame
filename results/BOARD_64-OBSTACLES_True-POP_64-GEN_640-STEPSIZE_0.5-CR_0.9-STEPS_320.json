@@ -1,0 +1,41 @@
+{
+    "1": {
+        "board_size": 64,
+        "obstacles": true,
+        "population_size": 64,
+        "generations": 640,
+        "stepsize_param": 0.5,
+        "crossover_rate": 0.9,
+        "steps": 320,
+        "best_fitness": -24533,
+        "worst_fitness": -34128,
+        "average_fitness": -33568.34375,
+        "best_attempted_moves": 285
+    },
+    "2": {
+        "board_size": 64,
+        "obstacles": true,
+        "population_size": 64,
+        "generations": 640,
+        "stepsize_param": 0.5,
+        "crossover_rate": 0.9,
+        "steps": 320,
+        "best_fitness": -25176,
+        "worst_fitness": -34096,
+        "average_fitness": -33269.6875,
+        "best_attempted_moves": 288
+    },
+    "3": {
+        "board_size": 64,
+        "obstacles": true,
+        "population_size": 64,
+        "generations": 640,
+        "stepsize_param": 0.5,
+        "crossover_rate": 0.9,
+        "steps": 320,
+        "best_fitness": -21620,
+        "worst_fitness": -34665,
+        "average_fitness": -33299.359375,
+        "best_attempted_moves": 270
+    }
+}

@@ -1,4 +1,6 @@
 import pygame
+import json
+import os
 from typing import Optional, Tuple, Dict
 
 image_cache: Dict[str, pygame.Surface] = {}
@@ -37,3 +39,31 @@ def draw_board(screen, board, knight, ctr) -> None:
                     screen.blit(board.visited_image, (visited_x, visited_y))
     board.visited_tiles.append(knight.visited_tiles[ctr])
     knight.draw_knight(screen)
+
+def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
+    """Append a result dict to a JSON file using the next available integer key."""
+    results_path = "results"
+    os.makedirs(results_path, exist_ok=True)
+    full_path = os.path.join(results_path, filename)
+
+    data = {}
+
+    # Load existing data if file exists
+    if os.path.exists(full_path):
+        try:
+            with open(full_path, "r") as file:
+                data = json.load(file)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Couldn't read existing file, starting fresh: {e}")
+
+    # Find next available integer key as a string
+    next_key = str(max(map(int, data.keys()), default=0) + 1)
+    data[next_key] = new_result
+
+    # Save updated data
+    try:
+        with open(full_path, "w") as file:
+            json.dump(data, file, indent=4)
+        print(f"Result saved under key '{next_key}' in {full_path}")
+    except IOError as e:
+        print(f"Error saving results to {full_path}: {e}")

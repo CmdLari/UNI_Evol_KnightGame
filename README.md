@@ -13,21 +13,23 @@ The goal is to guide a knight to visit as many unique tiles as possible, avoidin
 
 ## Project Structure
 
-- `main.py` — Entry point for the application
+- `main.py` - Entry point for the application
 
-- `chessset/` — Board and game logic
+- `chessset/` - Board and game logic
 
-  - `board.py` — Handles board layout and rendering
-  - `field.py` — Represents individual board tiles
-  - `utils.py` — Image loading and helper functions
+  - `board.py` - Handles board layout and rendering
+  - `field.py` - Represents individual board tiles
 
-- `differentialEvolution/` — Evolutionary algorithm components
+- `differentialEvolution/` - Evolutionary algorithm components
 
-  - `differentialEvolution.py` — Main DE algorithm loop
-  - `individual.py` — Individual representation with vector + fitness (represents the knight)
-  - `population.py` — Manages a population of individuals
+  - `differentialEvolution.py` - Main DE algorithm loop
+  - `individual.py` - Individual representation with vector + fitness (represents the knight)
+  - `population.py` - Manages a population of individuals
 
-- `assets/` — provides the graphical assets and fonts
+- `utils.py` - Image loading, tour visualisation, result dump
+
+- `assets/` - provides the graphical assets and fonts
+- `results/` - contains json dumps of knight tours
 
 ## Fitness Evaluation
 
@@ -61,10 +63,6 @@ You can adjust these in main.py.
 ## TO-DOs
 
 - Create a **simulation factory** to run large batches automatically
-
-- **Export results** to `.txt`, `.csv`, or other formats
-
-  - results should contain: [Obstacles Y/N | Board-Size | Population Size | Number of Generations | Step Size | Crossover Rate | Number of Steps | Best Fitness | Worst Fitness | Average Fitness]
 
 - **Visualize** (Potentially via Numpy?) the results (Take Average of Big Numbers)
 
