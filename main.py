@@ -3,7 +3,7 @@ import random
 from typing import List
 
 from chessset.board import Board
-from chessset.knight import Knight
+from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 from knightTourProblem import KnightTourProblem
 
@@ -38,7 +38,7 @@ class Main:
         self.running: bool = True
 
         self.board: Board = Board(self.screen, self.BOARD_WIDTH, self.BOARD_HEIGHT, self.starting_position, self.OBSTACLES)
-        self.knight: Knight = Knight(self.starting_position, self.BOARD_WIDTH, self.BOARD_HEIGHT)
+        self.knight: Individual = Individual(None, self.starting_position, self.BOARD_WIDTH, self.BOARD_HEIGHT)
 
         self.max_steps = 100  # or any step cap
         self.problem = KnightTourProblem(self.board, self.knight, self.max_steps)

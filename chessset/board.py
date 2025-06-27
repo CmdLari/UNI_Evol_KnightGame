@@ -4,8 +4,9 @@ from typing import List
 from typing import Optional, Tuple, Set
 
 from chessset.utils import load_image
-from chessset.knight import Knight
 from chessset.field import Field
+from differentialEvolution.individual import Individual
+
 
 class Board:
     def __init__(self, screen: pygame.Surface, width: int, height: int, starting_position: List[int], with_obstacles: bool = False) -> None:
@@ -20,7 +21,7 @@ class Board:
         self.visited_image: Optional[pygame.Surface] = load_image("visited.png", (50, 50))
         self.obstacle_image: Optional[pygame.Surface] = load_image("obstacle_image.png", (50, 50))
 
-    def draw_board(self, knight: Knight) -> None:
+    def draw_board(self, knight: Individual) -> None:
         '''Draw the board on the screen'''
         self.matrix[knight.position[1]][knight.position[0]].has_knight = True
         self.matrix[knight.position[1]][knight.position[0]].is_visited = True

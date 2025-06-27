@@ -1,10 +1,12 @@
 from typing import List, Tuple
 from chessset.board import Board
-from chessset.knight import Knight
 import copy
 
+from differentialEvolution.individual import Individual
+
+
 class KnightTourProblem:
-    def __init__(self, board: Board, knight: Knight, max_steps: int = 100):
+    def __init__(self, board: Board, knight: Individual, max_steps: int = 100):
         self.board = board
         self.knight = knight
         self.vector_length = max_steps
@@ -40,9 +42,10 @@ class KnightTourProblem:
             ):
                 position = [new_x, new_y]
                 visited.add(tuple(position))
-                print(f"Moved to: {position}, visited count: {len(visited)}")
+                #print(f"Moved to: {position}, visited count: {len(visited)}")
             else:
-                print(f"Move blocked or revisited at: {(new_x, new_y)}")
+                pass
+                #print(f"Move blocked or revisited at: {(new_x, new_y)}")
 
         print(f"Final visited count: {len(visited)}")
         return -len(visited)  # more visited cells = better fitness
