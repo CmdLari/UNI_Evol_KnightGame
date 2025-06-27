@@ -45,6 +45,10 @@ class Individual:
             else:
                 self.fitness -= 4  # Strong penalty for going off board
 
+        # Reward for visiting all tiles
+        if len(self.visited_tiles) == self.board_width * self.board_height:
+            self.fitness += 100
+
         return self.fitness
 
     def move_for_show(self, dx, dy):
