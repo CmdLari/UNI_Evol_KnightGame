@@ -64,7 +64,7 @@ You can adjust these in main.py.
 
 ## TO-DOs
 
-- **Visualize** (Potentially via Numpy?) the results (Take Average of Big Numbers)
+- **visualize** and **calculate averages** of big number of DEs
 
 - Compare DE performance when varying **one parameter at a time**:
 

@@ -2,6 +2,8 @@ import pygame
 import json
 import os
 from typing import Optional, Tuple, Dict
+import numpy as np
+import matplotlib.pyplot as plt
 
 image_cache: Dict[str, pygame.Surface] = {}
 
@@ -67,3 +69,65 @@ def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
         print(f"Result saved under key '{next_key}' in {full_path}")
     except IOError as e:
         print(f"Error saving results to {full_path}: {e}")
+
+def document_generation_in_json(filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int) -> None:
+    """Document the parameters of the generation in a JSON file."""
+    results_path = "results/gen_doc"
+    os.makedirs(results_path, exist_ok=True)
+    full_path = os.path.join(results_path, filename)
+
+    data = {}
+
+    if os.path.exists(full_path):
+        try:
+            with open(full_path, "r") as file:
+                data = json.load(file)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Couldn't read existing file, starting fresh: {e}")
+
+    next_key = str(max(map(int, data.keys()), default=0) + 1)
+    new_entry = {
+        "best_fitness": best_fitness,
+        "worst_fitness": worst_fitness,
+        "average_fitness": average_fitness,
+        "best_attempted_moves": best_attempted_moves
+    }
+
+    data[next_key] = new_entry
+    
+    try:
+        with open(full_path, "w") as file:
+            json.dump(data, file, indent=4)
+        # print(f"Generation documented in {full_path}")
+    except IOError as e:
+        print(f"Error saving generation documentation to {full_path}: {e}")
+
+def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
+    """Plot fitness over generations from a JSON file."""
+    results_path = "results/gen_doc"
+    full_path = os.path.join(results_path, filename)
+
+    if not os.path.exists(full_path):
+        print(f"File {full_path} does not exist.")
+        return
+
+    with open(full_path, "r") as file:
+        data = json.load(file)
+
+    generations = list(map(int, data.keys()))
+    best_fitness = [entry["best_fitness"] for entry in data.values()]
+    worst_fitness = [entry["worst_fitness"] for entry in data.values()]
+    average_fitness = [entry["average_fitness"] for entry in data.values()]
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(generations, best_fitness, label='Best Fitness', marker='o')
+    plt.plot(generations, worst_fitness, label='Worst Fitness', marker='x')
+    plt.plot(generations, average_fitness, label='Average Fitness', marker='s')
+
+    plt.xlabel('Generation')
+    plt.ylabel('Fitness')
+    plt.title(f'FITNESS OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps})')
+    plt.legend()
+    plt.grid()
+    plt.savefig(os.path.join(results_path, f"{filename}.png"))
+    # plt.show()

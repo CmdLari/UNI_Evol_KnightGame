@@ -15,6 +15,7 @@ class Board:
         self._create_fields(starting_position, with_obstacles)
         self.visited_image: Optional[pygame.Surface] = load_image("visited.png", (50, 50))
         self.obstacle_image: Optional[pygame.Surface] = load_image("obstacle_image.png", (50, 50))
+        self.obstacles: bool = with_obstacles
 
         self.visited_tiles = []
 

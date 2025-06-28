@@ -1,0 +1,3842 @@
+{
+    "1": {
+        "best_fitness": 0,
+        "worst_fitness": 0,
+        "average_fitness": -34826.84375,
+        "best_attempted_moves": 0
+    },
+    "2": {
+        "best_fitness": -34712,
+        "worst_fitness": -34910,
+        "average_fitness": -34809.359375,
+        "best_attempted_moves": 320
+    },
+    "3": {
+        "best_fitness": -34688,
+        "worst_fitness": -34871,
+        "average_fitness": -34792.484375,
+        "best_attempted_moves": 320
+    },
+    "4": {
+        "best_fitness": -34688,
+        "worst_fitness": -34856,
+        "average_fitness": -34785.125,
+        "best_attempted_moves": 320
+    },
+    "5": {
+        "best_fitness": -34688,
+        "worst_fitness": -34856,
+        "average_fitness": -34777.859375,
+        "best_attempted_moves": 320
+    },
+    "6": {
+        "best_fitness": -34688,
+        "worst_fitness": -34856,
+        "average_fitness": -34773.6875,
+        "best_attempted_moves": 320
+    },
+    "7": {
+        "best_fitness": -34688,
+        "worst_fitness": -34856,
+        "average_fitness": -34771.484375,
+        "best_attempted_moves": 320
+    },
+    "8": {
+        "best_fitness": -34688,
+        "worst_fitness": -34829,
+        "average_fitness": -34767.3125,
+        "best_attempted_moves": 320
+    },
+    "9": {
+        "best_fitness": -34688,
+        "worst_fitness": -34829,
+        "average_fitness": -34765.578125,
+        "best_attempted_moves": 320
+    },
+    "10": {
+        "best_fitness": -34688,
+        "worst_fitness": -34823,
+        "average_fitness": -34761.78125,
+        "best_attempted_moves": 320
+    },
+    "11": {
+        "best_fitness": -34688,
+        "worst_fitness": -34823,
+        "average_fitness": -34760.84375,
+        "best_attempted_moves": 320
+    },
+    "12": {
+        "best_fitness": -34688,
+        "worst_fitness": -34823,
+        "average_fitness": -34759.390625,
+        "best_attempted_moves": 320
+    },
+    "13": {
+        "best_fitness": -31174,
+        "worst_fitness": -34823,
+        "average_fitness": -34701.34375,
+        "best_attempted_moves": 310
+    },
+    "14": {
+        "best_fitness": -31174,
+        "worst_fitness": -34823,
+        "average_fitness": -34700.96875,
+        "best_attempted_moves": 310
+    },
+    "15": {
+        "best_fitness": -31174,
+        "worst_fitness": -34823,
+        "average_fitness": -34700.96875,
+        "best_attempted_moves": 310
+    },
+    "16": {
+        "best_fitness": -31174,
+        "worst_fitness": -34823,
+        "average_fitness": -34699.75,
+        "best_attempted_moves": 310
+    },
+    "17": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34698.765625,
+        "best_attempted_moves": 310
+    },
+    "18": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34698.109375,
+        "best_attempted_moves": 310
+    },
+    "19": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34697.921875,
+        "best_attempted_moves": 310
+    },
+    "20": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34697.3125,
+        "best_attempted_moves": 310
+    },
+    "21": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34696.84375,
+        "best_attempted_moves": 310
+    },
+    "22": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34696.1875,
+        "best_attempted_moves": 310
+    },
+    "23": {
+        "best_fitness": -31174,
+        "worst_fitness": -34811,
+        "average_fitness": -34696.09375,
+        "best_attempted_moves": 310
+    },
+    "24": {
+        "best_fitness": -31174,
+        "worst_fitness": -34799,
+        "average_fitness": -34695.15625,
+        "best_attempted_moves": 310
+    },
+    "25": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34692.625,
+        "best_attempted_moves": 310
+    },
+    "26": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34692.578125,
+        "best_attempted_moves": 310
+    },
+    "27": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34692.0625,
+        "best_attempted_moves": 310
+    },
+    "28": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34691.6875,
+        "best_attempted_moves": 310
+    },
+    "29": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34691.640625,
+        "best_attempted_moves": 310
+    },
+    "30": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34691.640625,
+        "best_attempted_moves": 310
+    },
+    "31": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34691.3125,
+        "best_attempted_moves": 310
+    },
+    "32": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34690.84375,
+        "best_attempted_moves": 310
+    },
+    "33": {
+        "best_fitness": -31174,
+        "worst_fitness": -34790,
+        "average_fitness": -34689.953125,
+        "best_attempted_moves": 310
+    },
+    "34": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34689.765625,
+        "best_attempted_moves": 310
+    },
+    "35": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34689.109375,
+        "best_attempted_moves": 310
+    },
+    "36": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34689.109375,
+        "best_attempted_moves": 310
+    },
+    "37": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34689.109375,
+        "best_attempted_moves": 310
+    },
+    "38": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34688.3125,
+        "best_attempted_moves": 310
+    },
+    "39": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34687.75,
+        "best_attempted_moves": 310
+    },
+    "40": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34687.46875,
+        "best_attempted_moves": 310
+    },
+    "41": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34687.140625,
+        "best_attempted_moves": 310
+    },
+    "42": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34687.140625,
+        "best_attempted_moves": 310
+    },
+    "43": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34686.71875,
+        "best_attempted_moves": 310
+    },
+    "44": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34686.71875,
+        "best_attempted_moves": 310
+    },
+    "45": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34686.671875,
+        "best_attempted_moves": 310
+    },
+    "46": {
+        "best_fitness": -31174,
+        "worst_fitness": -34787,
+        "average_fitness": -34686.296875,
+        "best_attempted_moves": 310
+    },
+    "47": {
+        "best_fitness": -31174,
+        "worst_fitness": -34784,
+        "average_fitness": -34686.0625,
+        "best_attempted_moves": 310
+    },
+    "48": {
+        "best_fitness": -31174,
+        "worst_fitness": -34784,
+        "average_fitness": -34686.0625,
+        "best_attempted_moves": 310
+    },
+    "49": {
+        "best_fitness": -31174,
+        "worst_fitness": -34784,
+        "average_fitness": -34686.0625,
+        "best_attempted_moves": 310
+    },
+    "50": {
+        "best_fitness": -31174,
+        "worst_fitness": -34784,
+        "average_fitness": -34686.0625,
+        "best_attempted_moves": 310
+    },
+    "51": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34568.078125,
+        "best_attempted_moves": 294
+    },
+    "52": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34567.9375,
+        "best_attempted_moves": 294
+    },
+    "53": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34567.375,
+        "best_attempted_moves": 294
+    },
+    "54": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34567.375,
+        "best_attempted_moves": 294
+    },
+    "55": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34567.375,
+        "best_attempted_moves": 294
+    },
+    "56": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34567.328125,
+        "best_attempted_moves": 294
+    },
+    "57": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34566.71875,
+        "best_attempted_moves": 294
+    },
+    "58": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34566.015625,
+        "best_attempted_moves": 294
+    },
+    "59": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34566.015625,
+        "best_attempted_moves": 294
+    },
+    "60": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34566.015625,
+        "best_attempted_moves": 294
+    },
+    "61": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34565.359375,
+        "best_attempted_moves": 294
+    },
+    "62": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34565.359375,
+        "best_attempted_moves": 294
+    },
+    "63": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34505.078125,
+        "best_attempted_moves": 294
+    },
+    "64": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34505.03125,
+        "best_attempted_moves": 294
+    },
+    "65": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34504.234375,
+        "best_attempted_moves": 294
+    },
+    "66": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34504.046875,
+        "best_attempted_moves": 294
+    },
+    "67": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34503.859375,
+        "best_attempted_moves": 294
+    },
+    "68": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34503.53125,
+        "best_attempted_moves": 294
+    },
+    "69": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34503.53125,
+        "best_attempted_moves": 294
+    },
+    "70": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34503.390625,
+        "best_attempted_moves": 294
+    },
+    "71": {
+        "best_fitness": -27170,
+        "worst_fitness": -34784,
+        "average_fitness": -34503.0625,
+        "best_attempted_moves": 294
+    },
+    "72": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34502.59375,
+        "best_attempted_moves": 294
+    },
+    "73": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34502.265625,
+        "best_attempted_moves": 294
+    },
+    "74": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34502.171875,
+        "best_attempted_moves": 294
+    },
+    "75": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.328125,
+        "best_attempted_moves": 294
+    },
+    "76": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.328125,
+        "best_attempted_moves": 294
+    },
+    "77": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.328125,
+        "best_attempted_moves": 294
+    },
+    "78": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.140625,
+        "best_attempted_moves": 294
+    },
+    "79": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.140625,
+        "best_attempted_moves": 294
+    },
+    "80": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.140625,
+        "best_attempted_moves": 294
+    },
+    "81": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.046875,
+        "best_attempted_moves": 294
+    },
+    "82": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34501.046875,
+        "best_attempted_moves": 294
+    },
+    "83": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.3125,
+        "best_attempted_moves": 294
+    },
+    "84": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.3125,
+        "best_attempted_moves": 294
+    },
+    "85": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.3125,
+        "best_attempted_moves": 294
+    },
+    "86": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.03125,
+        "best_attempted_moves": 294
+    },
+    "87": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.03125,
+        "best_attempted_moves": 294
+    },
+    "88": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.03125,
+        "best_attempted_moves": 294
+    },
+    "89": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34390.03125,
+        "best_attempted_moves": 294
+    },
+    "90": {
+        "best_fitness": -27170,
+        "worst_fitness": -34775,
+        "average_fitness": -34389.46875,
+        "best_attempted_moves": 294
+    },
+    "91": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.5625,
+        "best_attempted_moves": 254
+    },
+    "92": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.421875,
+        "best_attempted_moves": 254
+    },
+    "93": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.421875,
+        "best_attempted_moves": 254
+    },
+    "94": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.328125,
+        "best_attempted_moves": 254
+    },
+    "95": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.328125,
+        "best_attempted_moves": 254
+    },
+    "96": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34133.328125,
+        "best_attempted_moves": 254
+    },
+    "97": {
+        "best_fitness": -18346,
+        "worst_fitness": -34775,
+        "average_fitness": -34132.578125,
+        "best_attempted_moves": 254
+    },
+    "98": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34132.390625,
+        "best_attempted_moves": 254
+    },
+    "99": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34132.390625,
+        "best_attempted_moves": 254
+    },
+    "100": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34132.0625,
+        "best_attempted_moves": 254
+    },
+    "101": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34132.0625,
+        "best_attempted_moves": 254
+    },
+    "102": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34132.0625,
+        "best_attempted_moves": 254
+    },
+    "103": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.921875,
+        "best_attempted_moves": 254
+    },
+    "104": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.921875,
+        "best_attempted_moves": 254
+    },
+    "105": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.875,
+        "best_attempted_moves": 254
+    },
+    "106": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.6875,
+        "best_attempted_moves": 254
+    },
+    "107": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.6875,
+        "best_attempted_moves": 254
+    },
+    "108": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34131.265625,
+        "best_attempted_moves": 254
+    },
+    "109": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34129.71875,
+        "best_attempted_moves": 254
+    },
+    "110": {
+        "best_fitness": -18346,
+        "worst_fitness": -34763,
+        "average_fitness": -34129.71875,
+        "best_attempted_moves": 254
+    },
+    "111": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "112": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "113": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "114": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "115": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "116": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "117": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "118": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "119": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "120": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.53125,
+        "best_attempted_moves": 254
+    },
+    "121": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.25,
+        "best_attempted_moves": 254
+    },
+    "122": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.25,
+        "best_attempted_moves": 254
+    },
+    "123": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.109375,
+        "best_attempted_moves": 254
+    },
+    "124": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34129.109375,
+        "best_attempted_moves": 254
+    },
+    "125": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "126": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "127": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "128": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "129": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "130": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "131": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.96875,
+        "best_attempted_moves": 254
+    },
+    "132": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.359375,
+        "best_attempted_moves": 254
+    },
+    "133": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.359375,
+        "best_attempted_moves": 254
+    },
+    "134": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.359375,
+        "best_attempted_moves": 254
+    },
+    "135": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "136": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "137": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "138": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "139": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "140": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "141": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "142": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "143": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -34128.265625,
+        "best_attempted_moves": 254
+    },
+    "144": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.1875,
+        "best_attempted_moves": 254
+    },
+    "145": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.1875,
+        "best_attempted_moves": 254
+    },
+    "146": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.140625,
+        "best_attempted_moves": 254
+    },
+    "147": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.140625,
+        "best_attempted_moves": 254
+    },
+    "148": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.140625,
+        "best_attempted_moves": 254
+    },
+    "149": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.140625,
+        "best_attempted_moves": 254
+    },
+    "150": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33928.140625,
+        "best_attempted_moves": 254
+    },
+    "151": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "152": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "153": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "154": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "155": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "156": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.859375,
+        "best_attempted_moves": 254
+    },
+    "157": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.671875,
+        "best_attempted_moves": 254
+    },
+    "158": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.671875,
+        "best_attempted_moves": 254
+    },
+    "159": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.671875,
+        "best_attempted_moves": 254
+    },
+    "160": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.390625,
+        "best_attempted_moves": 254
+    },
+    "161": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.390625,
+        "best_attempted_moves": 254
+    },
+    "162": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.390625,
+        "best_attempted_moves": 254
+    },
+    "163": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.390625,
+        "best_attempted_moves": 254
+    },
+    "164": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "165": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "166": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "167": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "168": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "169": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "170": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "171": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33927.25,
+        "best_attempted_moves": 254
+    },
+    "172": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.328125,
+        "best_attempted_moves": 254
+    },
+    "173": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.328125,
+        "best_attempted_moves": 254
+    },
+    "174": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.328125,
+        "best_attempted_moves": 254
+    },
+    "175": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.328125,
+        "best_attempted_moves": 254
+    },
+    "176": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.234375,
+        "best_attempted_moves": 254
+    },
+    "177": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.234375,
+        "best_attempted_moves": 254
+    },
+    "178": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.234375,
+        "best_attempted_moves": 254
+    },
+    "179": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33762.1875,
+        "best_attempted_moves": 254
+    },
+    "180": {
+        "best_fitness": -18346,
+        "worst_fitness": -34757,
+        "average_fitness": -33761.859375,
+        "best_attempted_moves": 254
+    },
+    "181": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.671875,
+        "best_attempted_moves": 254
+    },
+    "182": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.671875,
+        "best_attempted_moves": 254
+    },
+    "183": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.671875,
+        "best_attempted_moves": 254
+    },
+    "184": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.671875,
+        "best_attempted_moves": 254
+    },
+    "185": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "186": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "187": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "188": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "189": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "190": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "191": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "192": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33761.4375,
+        "best_attempted_moves": 254
+    },
+    "193": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33760.78125,
+        "best_attempted_moves": 254
+    },
+    "194": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33760.78125,
+        "best_attempted_moves": 254
+    },
+    "195": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33760.21875,
+        "best_attempted_moves": 254
+    },
+    "196": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33760.21875,
+        "best_attempted_moves": 254
+    },
+    "197": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.421875,
+        "best_attempted_moves": 254
+    },
+    "198": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.28125,
+        "best_attempted_moves": 254
+    },
+    "199": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.28125,
+        "best_attempted_moves": 254
+    },
+    "200": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.28125,
+        "best_attempted_moves": 254
+    },
+    "201": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.28125,
+        "best_attempted_moves": 254
+    },
+    "202": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.28125,
+        "best_attempted_moves": 254
+    },
+    "203": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "204": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "205": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "206": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "207": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "208": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "209": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "210": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "211": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "212": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "213": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "214": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "215": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "216": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "217": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "218": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "219": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "220": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33759.0,
+        "best_attempted_moves": 254
+    },
+    "221": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33758.90625,
+        "best_attempted_moves": 254
+    },
+    "222": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33758.90625,
+        "best_attempted_moves": 254
+    },
+    "223": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33758.90625,
+        "best_attempted_moves": 254
+    },
+    "224": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33758.71875,
+        "best_attempted_moves": 254
+    },
+    "225": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33758.53125,
+        "best_attempted_moves": 254
+    },
+    "226": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33757.828125,
+        "best_attempted_moves": 254
+    },
+    "227": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "228": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "229": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "230": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "231": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "232": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "233": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "234": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "235": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33741.171875,
+        "best_attempted_moves": 254
+    },
+    "236": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.890625,
+        "best_attempted_moves": 254
+    },
+    "237": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.890625,
+        "best_attempted_moves": 254
+    },
+    "238": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.75,
+        "best_attempted_moves": 254
+    },
+    "239": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.75,
+        "best_attempted_moves": 254
+    },
+    "240": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.703125,
+        "best_attempted_moves": 254
+    },
+    "241": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "242": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "243": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "244": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "245": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "246": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.5625,
+        "best_attempted_moves": 254
+    },
+    "247": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.515625,
+        "best_attempted_moves": 254
+    },
+    "248": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.515625,
+        "best_attempted_moves": 254
+    },
+    "249": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.515625,
+        "best_attempted_moves": 254
+    },
+    "250": {
+        "best_fitness": -18346,
+        "worst_fitness": -34751,
+        "average_fitness": -33740.515625,
+        "best_attempted_moves": 254
+    },
+    "251": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.625,
+        "best_attempted_moves": 254
+    },
+    "252": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.484375,
+        "best_attempted_moves": 254
+    },
+    "253": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.484375,
+        "best_attempted_moves": 254
+    },
+    "254": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "255": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "256": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "257": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "258": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "259": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "260": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.4375,
+        "best_attempted_moves": 254
+    },
+    "261": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.390625,
+        "best_attempted_moves": 254
+    },
+    "262": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.203125,
+        "best_attempted_moves": 254
+    },
+    "263": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.203125,
+        "best_attempted_moves": 254
+    },
+    "264": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.203125,
+        "best_attempted_moves": 254
+    },
+    "265": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.203125,
+        "best_attempted_moves": 254
+    },
+    "266": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "267": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "268": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "269": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "270": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "271": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "272": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "273": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "274": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "275": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "276": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "277": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "278": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "279": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "280": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "281": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "282": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "283": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33739.109375,
+        "best_attempted_moves": 254
+    },
+    "284": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33738.875,
+        "best_attempted_moves": 254
+    },
+    "285": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33738.875,
+        "best_attempted_moves": 254
+    },
+    "286": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33738.6875,
+        "best_attempted_moves": 254
+    },
+    "287": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33738.40625,
+        "best_attempted_moves": 254
+    },
+    "288": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33738.265625,
+        "best_attempted_moves": 254
+    },
+    "289": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.890625,
+        "best_attempted_moves": 254
+    },
+    "290": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "291": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "292": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "293": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "294": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "295": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "296": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "297": {
+        "best_fitness": -18346,
+        "worst_fitness": -34748,
+        "average_fitness": -33737.703125,
+        "best_attempted_moves": 254
+    },
+    "298": {
+        "best_fitness": -18346,
+        "worst_fitness": -34742,
+        "average_fitness": -33737.328125,
+        "best_attempted_moves": 254
+    },
+    "299": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.1875,
+        "best_attempted_moves": 254
+    },
+    "300": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "301": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "302": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "303": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "304": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "305": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "306": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "307": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "308": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "309": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "310": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "311": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "312": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33737.0,
+        "best_attempted_moves": 254
+    },
+    "313": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.625,
+        "best_attempted_moves": 254
+    },
+    "314": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.625,
+        "best_attempted_moves": 254
+    },
+    "315": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.34375,
+        "best_attempted_moves": 254
+    },
+    "316": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.15625,
+        "best_attempted_moves": 254
+    },
+    "317": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.15625,
+        "best_attempted_moves": 254
+    },
+    "318": {
+        "best_fitness": -18346,
+        "worst_fitness": -34739,
+        "average_fitness": -33736.15625,
+        "best_attempted_moves": 254
+    },
+    "319": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33736.0625,
+        "best_attempted_moves": 254
+    },
+    "320": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "321": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "322": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "323": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "324": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "325": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "326": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "327": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "328": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "329": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "330": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.875,
+        "best_attempted_moves": 254
+    },
+    "331": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.6875,
+        "best_attempted_moves": 254
+    },
+    "332": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.6875,
+        "best_attempted_moves": 254
+    },
+    "333": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.640625,
+        "best_attempted_moves": 254
+    },
+    "334": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "335": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "336": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "337": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "338": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "339": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.453125,
+        "best_attempted_moves": 254
+    },
+    "340": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.40625,
+        "best_attempted_moves": 254
+    },
+    "341": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.40625,
+        "best_attempted_moves": 254
+    },
+    "342": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.359375,
+        "best_attempted_moves": 254
+    },
+    "343": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.3125,
+        "best_attempted_moves": 254
+    },
+    "344": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.3125,
+        "best_attempted_moves": 254
+    },
+    "345": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.3125,
+        "best_attempted_moves": 254
+    },
+    "346": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.078125,
+        "best_attempted_moves": 254
+    },
+    "347": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.078125,
+        "best_attempted_moves": 254
+    },
+    "348": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.078125,
+        "best_attempted_moves": 254
+    },
+    "349": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.078125,
+        "best_attempted_moves": 254
+    },
+    "350": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.03125,
+        "best_attempted_moves": 254
+    },
+    "351": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33735.03125,
+        "best_attempted_moves": 254
+    },
+    "352": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "353": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "354": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "355": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "356": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "357": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.84375,
+        "best_attempted_moves": 254
+    },
+    "358": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "359": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "360": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "361": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "362": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "363": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "364": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "365": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "366": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "367": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.796875,
+        "best_attempted_moves": 254
+    },
+    "368": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "369": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "370": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "371": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "372": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "373": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "374": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "375": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "376": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "377": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "378": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.703125,
+        "best_attempted_moves": 254
+    },
+    "379": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "380": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "381": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "382": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "383": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "384": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.65625,
+        "best_attempted_moves": 254
+    },
+    "385": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "386": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "387": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "388": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "389": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "390": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "391": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "392": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "393": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "394": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "395": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "396": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "397": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "398": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.234375,
+        "best_attempted_moves": 254
+    },
+    "399": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.0,
+        "best_attempted_moves": 254
+    },
+    "400": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.0,
+        "best_attempted_moves": 254
+    },
+    "401": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.0,
+        "best_attempted_moves": 254
+    },
+    "402": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33734.0,
+        "best_attempted_moves": 254
+    },
+    "403": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.71875,
+        "best_attempted_moves": 254
+    },
+    "404": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.71875,
+        "best_attempted_moves": 254
+    },
+    "405": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.71875,
+        "best_attempted_moves": 254
+    },
+    "406": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "407": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "408": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "409": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "410": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "411": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "412": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "413": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33733.53125,
+        "best_attempted_moves": 254
+    },
+    "414": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.96875,
+        "best_attempted_moves": 254
+    },
+    "415": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.96875,
+        "best_attempted_moves": 254
+    },
+    "416": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.96875,
+        "best_attempted_moves": 254
+    },
+    "417": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "418": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "419": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "420": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "421": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "422": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "423": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "424": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.875,
+        "best_attempted_moves": 254
+    },
+    "425": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.6875,
+        "best_attempted_moves": 254
+    },
+    "426": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.5,
+        "best_attempted_moves": 254
+    },
+    "427": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.5,
+        "best_attempted_moves": 254
+    },
+    "428": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.5,
+        "best_attempted_moves": 254
+    },
+    "429": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.359375,
+        "best_attempted_moves": 254
+    },
+    "430": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "431": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "432": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "433": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "434": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "435": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "436": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33732.171875,
+        "best_attempted_moves": 254
+    },
+    "437": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "438": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "439": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "440": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "441": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "442": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "443": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "444": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "445": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "446": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.9375,
+        "best_attempted_moves": 254
+    },
+    "447": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.46875,
+        "best_attempted_moves": 254
+    },
+    "448": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.46875,
+        "best_attempted_moves": 254
+    },
+    "449": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.46875,
+        "best_attempted_moves": 254
+    },
+    "450": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.46875,
+        "best_attempted_moves": 254
+    },
+    "451": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.46875,
+        "best_attempted_moves": 254
+    },
+    "452": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "453": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "454": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "455": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "456": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "457": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "458": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33731.375,
+        "best_attempted_moves": 254
+    },
+    "459": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33518.375,
+        "best_attempted_moves": 254
+    },
+    "460": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33518.375,
+        "best_attempted_moves": 254
+    },
+    "461": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33518.046875,
+        "best_attempted_moves": 254
+    },
+    "462": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33518.046875,
+        "best_attempted_moves": 254
+    },
+    "463": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "464": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "465": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "466": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "467": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "468": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "469": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.921875,
+        "best_attempted_moves": 254
+    },
+    "470": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.875,
+        "best_attempted_moves": 254
+    },
+    "471": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.875,
+        "best_attempted_moves": 254
+    },
+    "472": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.875,
+        "best_attempted_moves": 254
+    },
+    "473": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.875,
+        "best_attempted_moves": 254
+    },
+    "474": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "475": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "476": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "477": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "478": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "479": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "480": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "481": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "482": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "483": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.6875,
+        "best_attempted_moves": 254
+    },
+    "484": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.3125,
+        "best_attempted_moves": 254
+    },
+    "485": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.3125,
+        "best_attempted_moves": 254
+    },
+    "486": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.3125,
+        "best_attempted_moves": 254
+    },
+    "487": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.3125,
+        "best_attempted_moves": 254
+    },
+    "488": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33419.3125,
+        "best_attempted_moves": 254
+    },
+    "489": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33363.65625,
+        "best_attempted_moves": 254
+    },
+    "490": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33363.65625,
+        "best_attempted_moves": 254
+    },
+    "491": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33363.65625,
+        "best_attempted_moves": 254
+    },
+    "492": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "493": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "494": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "495": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "496": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "497": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "498": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "499": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "500": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.859375,
+        "best_attempted_moves": 254
+    },
+    "501": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.484375,
+        "best_attempted_moves": 254
+    },
+    "502": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "503": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "504": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "505": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "506": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "507": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33298.0625,
+        "best_attempted_moves": 254
+    },
+    "508": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "509": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "510": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "511": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "512": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "513": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "514": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "515": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "516": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "517": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "518": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "519": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "520": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33297.96875,
+        "best_attempted_moves": 254
+    },
+    "521": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33203.09375,
+        "best_attempted_moves": 254
+    },
+    "522": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33203.09375,
+        "best_attempted_moves": 254
+    },
+    "523": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33203.09375,
+        "best_attempted_moves": 254
+    },
+    "524": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.625,
+        "best_attempted_moves": 254
+    },
+    "525": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.625,
+        "best_attempted_moves": 254
+    },
+    "526": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.625,
+        "best_attempted_moves": 254
+    },
+    "527": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.625,
+        "best_attempted_moves": 254
+    },
+    "528": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.390625,
+        "best_attempted_moves": 254
+    },
+    "529": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.390625,
+        "best_attempted_moves": 254
+    },
+    "530": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.390625,
+        "best_attempted_moves": 254
+    },
+    "531": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33202.390625,
+        "best_attempted_moves": 254
+    },
+    "532": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.6875,
+        "best_attempted_moves": 254
+    },
+    "533": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.6875,
+        "best_attempted_moves": 254
+    },
+    "534": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "535": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "536": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "537": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "538": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "539": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.265625,
+        "best_attempted_moves": 254
+    },
+    "540": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33201.125,
+        "best_attempted_moves": 254
+    },
+    "541": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "542": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "543": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "544": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "545": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "546": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "547": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33200.75,
+        "best_attempted_moves": 254
+    },
+    "548": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33157.375,
+        "best_attempted_moves": 254
+    },
+    "549": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33157.375,
+        "best_attempted_moves": 254
+    },
+    "550": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33157.375,
+        "best_attempted_moves": 254
+    },
+    "551": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "552": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "553": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "554": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "555": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "556": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "557": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "558": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "559": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "560": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "561": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "562": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "563": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "564": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "565": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.703125,
+        "best_attempted_moves": 254
+    },
+    "566": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.65625,
+        "best_attempted_moves": 254
+    },
+    "567": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.515625,
+        "best_attempted_moves": 254
+    },
+    "568": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.515625,
+        "best_attempted_moves": 254
+    },
+    "569": {
+        "best_fitness": -18346,
+        "worst_fitness": -34736,
+        "average_fitness": -33100.515625,
+        "best_attempted_moves": 254
+    },
+    "570": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.421875,
+        "best_attempted_moves": 254
+    },
+    "571": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.421875,
+        "best_attempted_moves": 254
+    },
+    "572": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.28125,
+        "best_attempted_moves": 254
+    },
+    "573": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "574": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "575": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "576": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "577": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "578": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "579": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "580": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33100.09375,
+        "best_attempted_moves": 254
+    },
+    "581": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "582": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "583": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "584": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "585": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "586": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "587": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "588": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "589": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "590": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "591": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.953125,
+        "best_attempted_moves": 254
+    },
+    "592": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.765625,
+        "best_attempted_moves": 254
+    },
+    "593": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.765625,
+        "best_attempted_moves": 254
+    },
+    "594": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.765625,
+        "best_attempted_moves": 254
+    },
+    "595": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.765625,
+        "best_attempted_moves": 254
+    },
+    "596": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "597": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "598": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "599": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "600": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "601": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "602": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "603": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "604": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "605": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "606": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "607": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "608": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.625,
+        "best_attempted_moves": 254
+    },
+    "609": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "610": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "611": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "612": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "613": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "614": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "615": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "616": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "617": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "618": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "619": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "620": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "621": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.53125,
+        "best_attempted_moves": 254
+    },
+    "622": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "623": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "624": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "625": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "626": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "627": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "628": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "629": {
+        "best_fitness": -18346,
+        "worst_fitness": -34733,
+        "average_fitness": -33099.15625,
+        "best_attempted_moves": 254
+    },
+    "630": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33097.796875,
+        "best_attempted_moves": 254
+    },
+    "631": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "632": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "633": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "634": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "635": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "636": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "637": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "638": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "639": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    },
+    "640": {
+        "best_fitness": -18346,
+        "worst_fitness": -34727,
+        "average_fitness": -33079.765625,
+        "best_attempted_moves": 254
+    }
+}

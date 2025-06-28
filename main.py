@@ -2,14 +2,14 @@ import pygame
 import random
 from typing import List
 
-from utils import (draw_board, save_results_to_json)
+from utils import (draw_board, save_results_to_json, plot_fitness_over_generations)
 from chessset.board import Board
 from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
     BOARD_SIZE = 8
-    NUMBER_OF_RUNS = 1
+    NUMBER_OF_RUNS = 3
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -77,7 +77,7 @@ class Main:
                 
 
             pygame.display.flip()
-            self.clock.tick(10) # Adjust speed of the game to generation size
+            self.clock.tick(5) # Adjust speed of the game to generation size
 
     def _check_events(self) -> None:
         '''Check for events and handle them'''
@@ -117,6 +117,8 @@ if __name__ == "__main__":
             "average_fitness": sum(ind.fitness for ind in game.de.population.individuals) / len(game.de.population.individuals),
             "best_attempted_moves": game.de.best.attempted_moves
         })
+        # plot fitness of ONE de
+        plot_fitness_over_generations(game.de.filename, game.de) # comment this line to skip plotting one de
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
-    game.visualize() # Comment this line to skip visualization
+    # game.visualize() # Comment this line to skip visualization
     pygame.quit()
