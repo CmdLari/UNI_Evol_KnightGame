@@ -3,7 +3,7 @@ import random
 from typing import List
 from datetime import datetime
 
-from utils import (draw_board, save_results_to_json, plot_fitness_over_generations)
+from utils import (draw_board, save_results_to_json, plot_fitness_over_generations, process_accumulated_runs)
 from chessset.board import Board
 from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     for _ in range(game.NUMBER_OF_RUNS):
         game.solve_with_de()
         # Save results to JSON for later analysis
-        save_results_to_json(f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
+        full_path = save_results_to_json(f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
             "board_size": game.BOARD_HEIGHT * game.BOARD_WIDTH,
             "obstacles": game.OBSTACLES,
             "population_size": game.POPULATION_SIZE,
@@ -116,8 +116,11 @@ if __name__ == "__main__":
             "crossover_rate": game.CROSSOVER_RATE,
             "steps": game.STEPS,
             "best_fitness": game.de.best.fitness,
+            "best_fitness_per_step": game.de.best.fitness / game.STEPS,
             "worst_fitness": game.de.worst.fitness,
+            "worst_fitness_per_step": game.de.worst.fitness / game.STEPS,
             "average_fitness": sum(ind.fitness for ind in game.de.population.individuals) / len(game.de.population.individuals),
+            "average_fitness_per_step": sum(ind.fitness for ind in game.de.population.individuals) / len(game.de.population.individuals) / game.STEPS,
             "best_attempted_moves": game.de.best.attempted_moves
         })
         # plot fitness of ONE de
@@ -125,4 +128,6 @@ if __name__ == "__main__":
             plot_fitness_over_generations(game.de.filename, game.de)
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
     # game.visualize() # Comment this line to skip visualization
+    # Process accumulated runs
+    process_accumulated_runs(full_path)
     pygame.quit()

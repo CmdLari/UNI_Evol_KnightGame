@@ -65,8 +65,6 @@ You can adjust these in main.py.
 
 ## TO-DOs
 
-- **calculate averages** of big number of DEs -> use save_results_to_json return to calculate those averages
-
 - Compare DE performance when varying **one parameter at a time**:
 
   - Population size

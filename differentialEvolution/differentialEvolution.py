@@ -68,4 +68,5 @@ class DifferentialEvolution:
                                             self.best.fitness if self.best else 0,
                                             self.worst.fitness if self.worst else 0,
                                             sum(ind.fitness for ind in self.population.individuals) / len(self.population.individuals) if self.population.individuals else 0,
-                                            self.best.attempted_moves if self.best else 0)
+                                            self.best.attempted_moves if self.best else 0,
+                                            self.steps)
