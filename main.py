@@ -10,8 +10,9 @@ from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
     BOARD_SIZE = 4
-    NUMBER_OF_RUNS = 2
+    NUMBER_OF_RUNS = 3
     DOCUMENT_GENERATIONS: bool = True
+    SHOW_PONY: bool = True
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -127,7 +128,8 @@ if __name__ == "__main__":
         if game.DOCUMENT_GENERATIONS:
             plot_fitness_over_generations(game.de.filename, game.de)
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
-    # game.visualize() # Comment this line to skip visualization
+    if game.SHOW_PONY:
+        game.visualize() # Comment this line to skip visualization - shows LAST run of the knight tour
     # Process accumulated runs
     process_accumulated_runs(full_path)
     pygame.quit()
