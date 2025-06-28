@@ -2,6 +2,7 @@ import pygame
 import random
 from typing import List
 from datetime import datetime
+import time
 
 from utils import (draw_board, save_results_to_json, plot_fitness_over_generations, process_accumulated_runs)
 from chessset.board import Board
@@ -9,8 +10,8 @@ from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
-    BOARD_SIZE = 4
-    NUMBER_OF_RUNS = 3
+    BOARD_SIZE = 8
+    NUMBER_OF_RUNS = 5
     DOCUMENT_GENERATIONS: bool = True
     SHOW_PONY: bool = True
     def __init__(self) -> None:
@@ -20,7 +21,7 @@ class Main:
         # Set up base parameters
         self.BOARD_WIDTH = self.BOARD_SIZE
         self.BOARD_HEIGHT = self.BOARD_SIZE
-        self.OBSTACLES: bool = True
+        self.OBSTACLES: bool = False
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.STEPSIZE_PARAM = 0.5
@@ -105,6 +106,8 @@ class Main:
 
 if __name__ == "__main__":
     game = Main()
+    #not starting time
+    start = time.time()
     for _ in range(game.NUMBER_OF_RUNS):
         game.solve_with_de()
         # Save results to JSON for later analysis
@@ -128,8 +131,12 @@ if __name__ == "__main__":
         if game.DOCUMENT_GENERATIONS:
             plot_fitness_over_generations(game.de.filename, game.de)
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
+    end = time.time()
+    # reduce time to minute (3 floating point)
+    time_in_minutes = round((end - start) / 60, 3)
+    time_per_run = round(time_in_minutes / game.NUMBER_OF_RUNS, 3)
+    # Process accumulated runs
+    process_accumulated_runs(full_path, time_per_run)
     if game.SHOW_PONY:
         game.visualize() # Comment this line to skip visualization - shows LAST run of the knight tour
-    # Process accumulated runs
-    process_accumulated_runs(full_path)
     pygame.quit()

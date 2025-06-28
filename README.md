@@ -52,6 +52,7 @@ Fitness is calculated based on:
 
 ## Parameters
 
+- **SHOW_PONY:** Use pygame to visualize the latest iteration of the algorithm
 - **BOARD_SIZE:** Sets lenght AND width of board
 - **NUMBER_OF_RUNS:** How many times is a board solved by the DE
 - **DOCUMENT_GENERATIONS:** Is EVERY Generation of EVERY run documented (for graphs eg)

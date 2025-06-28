@@ -160,7 +160,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     # plt.show()
 
 
-def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOARD_64-OBSTACLES_True-POP_64-GEN_640-STEPSIZE_0.5-CR_0.9-STEPS_320.json"):
+def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOARD_64-OBSTACLES_True-POP_64-GEN_640-STEPSIZE_0.5-CR_0.9-STEPS_320.json", time_per_run: Optional[float] = None) -> Dict[str, float]:
     """Process all runs in a result.json and save aggregate statistics."""
     if not os.path.exists(full_path):
         print(f"File not found: {full_path}")
@@ -177,8 +177,10 @@ def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOA
 
     accumulator = {key: 0.0 for key in keys_to_average}
     count = len(data)
+    count_runs = 0
 
     for run in data.values():
+        count_runs += 1
         for key in keys_to_average:
             accumulator[key] += run.get(key, 0.0)
 
@@ -188,7 +190,7 @@ def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOA
     avg_dir = f"results/"
     os.makedirs(avg_dir, exist_ok=True)
 
-    base_filename = os.path.basename(full_path).replace(".json", ".avg.json")
+    base_filename = os.path.basename(full_path).replace(".json", f"_runs-{count_runs}_avg.json")
     avg_file = os.path.join(avg_dir, base_filename)
     with open(avg_file, "w") as outfile:
         json.dump(averaged_results, outfile, indent=4)
@@ -199,11 +201,11 @@ def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOA
     keys_to_plot = ["best_fitness_per_step", "average_fitness_per_step", "worst_fitness_per_step"]
     values = [averaged_results[k] for k in keys_to_plot]
     plt.bar(keys_to_plot, values, color=['gold', 'teal', 'salmon'])
-    plt.title("Average Fitness per Step Across Runs")
+    plt.title(f"Average Fitness per Step Across {count_runs} Runs\nOne run took {time_per_run} minutes")
     plt.ylabel("Fitness per Step")
     plt.grid(axis='y')
     plt.tight_layout()
     plt.savefig(avg_file.replace('.json', '_fitness_per_step_plot.png'))
-    print(f"Plot saved to {full_path.replace('.json', '_fitness_per_step_plot.png')}")
+    print(f"Plot saved to {full_path.replace('.json', '_fitness_per_step_plot_runs-{count_runs}.png')}")
 
     return averaged_results
