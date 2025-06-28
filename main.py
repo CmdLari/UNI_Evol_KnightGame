@@ -11,7 +11,7 @@ from differentialEvolution.differentialEvolution import DifferentialEvolution
 class Main:
     BOARD_SIZE = 8
     NUMBER_OF_RUNS = 3
-    DOCUMENT_GENERATIONS: bool = False
+    DOCUMENT_GENERATIONS: bool = True
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
