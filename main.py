@@ -1,6 +1,7 @@
 import pygame
 import random
 from typing import List
+from datetime import datetime
 
 from utils import (draw_board, save_results_to_json, plot_fitness_over_generations)
 from chessset.board import Board
@@ -10,6 +11,7 @@ from differentialEvolution.differentialEvolution import DifferentialEvolution
 class Main:
     BOARD_SIZE = 8
     NUMBER_OF_RUNS = 3
+    DOCUMENT_GENERATIONS: bool = False
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -90,7 +92,7 @@ class Main:
                     self.running = False
 
     def solve_with_de(self) -> None:
-        self.de.run()
+        self.de.run(self.DOCUMENT_GENERATIONS)
         print("Best fitness:", self.de.best.fitness)
         print("Worst fitness:", self.de.worst.fitness)
         print ("Average fitness:", sum(ind.fitness for ind in self.de.population.individuals) / len(self.de.population.individuals))
@@ -104,7 +106,8 @@ if __name__ == "__main__":
     game = Main()
     for _ in range(game.NUMBER_OF_RUNS):
         game.solve_with_de()
-        save_results_to_json(f"BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
+        # Save results to JSON for later analysis
+        save_results_to_json(f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
             "board_size": game.BOARD_HEIGHT * game.BOARD_WIDTH,
             "obstacles": game.OBSTACLES,
             "population_size": game.POPULATION_SIZE,
@@ -118,7 +121,8 @@ if __name__ == "__main__":
             "best_attempted_moves": game.de.best.attempted_moves
         })
         # plot fitness of ONE de
-        plot_fitness_over_generations(game.de.filename, game.de) # comment this line to skip plotting one de
+        if game.DOCUMENT_GENERATIONS:
+            plot_fitness_over_generations(game.de.filename, game.de)
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
     # game.visualize() # Comment this line to skip visualization
     pygame.quit()

@@ -4,6 +4,7 @@ import os
 from typing import Optional, Tuple, Dict
 import numpy as np
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 image_cache: Dict[str, pygame.Surface] = {}
 
@@ -44,7 +45,7 @@ def draw_board(screen, board, knight, ctr) -> None:
 
 def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
     """Append a result dict to a JSON file using the next available integer key."""
-    results_path = "results"
+    results_path = f"results/gen_doc/{datetime.now().date()}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -72,7 +73,7 @@ def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
 
 def document_generation_in_json(filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int) -> None:
     """Document the parameters of the generation in a JSON file."""
-    results_path = "results/gen_doc"
+    results_path = f"results/gen_doc/{datetime.now().date()}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -104,7 +105,7 @@ def document_generation_in_json(filename:str, best_fitness:int, worst_fitness:in
 
 def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     """Plot fitness over generations from a JSON file."""
-    results_path = "results/gen_doc"
+    results_path = f"results/gen_doc/{datetime.now().date()}"
     full_path = os.path.join(results_path, filename)
 
     if not os.path.exists(full_path):

@@ -50,15 +50,16 @@ Fitness is calculated based on:
 
 ## Parameters
 
-POPULATION_SIZE: number of individuals
-
-GENERATIONS: evolution cycles
-
-CROSSOVER_RATE: probability of mixing individuals
-
-STEPSIZE_PARAM (F): mutation scaling factor
-
-STEPS: number of moves per individual
+- **BOARD_SIZE:** Sets lenght AND width of board
+- **NUMBER_OF_RUNS:** How many times is a board solved by the DE
+- **DOCUMENT_GENERATIONS:** Is EVERY Generation of EVERY run documented (for graphs eg)
+- **BOARD_WIDTH:** Set to BOARD_SIZE (could be used for non square boards)
+- **BOARD_HEIGHT:** Set to BOARD_SIZE (could be used for non square boards)
+- **POPULATION_SIZE:** number of individuals
+- **GENERATIONS:** evolution cycles
+- **CROSSOVER_RATE:** probability of mixing individuals
+- **STEPSIZE_PARAM (F):** mutation scaling factor
+- **STEPS:** number of moves per individual
 
 You can adjust these in main.py.
 

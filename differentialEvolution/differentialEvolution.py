@@ -21,16 +21,17 @@ class DifferentialEvolution:
         self.filename = f"{datetime.now().date()}_{random.randint(1, 10000)}_generation.json"
 
 
-    def run(self):
+    def run(self, document_generation_in_json=True):
         for ind in self.population.individuals:
             ind.evaluate(self.board)  # Evaluate initial fitness
 
         for _ in range(self.generations):
-            document_generation_in_json(self.filename,
-                                        self.best.fitness if self.best else 0,
-                                        self.worst.fitness if self.worst else 0,
-                                        sum(ind.fitness for ind in self.population.individuals) / len(self.population.individuals) if self.population.individuals else 0,
-                                        self.best.attempted_moves if self.best else 0)
+            if document_generation_in_json:
+                document_generation_in_json(self.filename,
+                                            self.best.fitness if self.best else 0,
+                                            self.worst.fitness if self.worst else 0,
+                                            sum(ind.fitness for ind in self.population.individuals) / len(self.population.individuals) if self.population.individuals else 0,
+                                            self.best.attempted_moves if self.best else 0)
             new_population = []
 
             for i, target in enumerate(self.population.individuals):
