@@ -64,7 +64,7 @@ class DifferentialEvolution:
             self.worst = min(self.population.individuals, key=lambda x: x.fitness)
 
             if document_generation:
-                document_generation_in_json(self.filename,
+                document_generation_in_json(self, self.filename,
                                             self.best.fitness if self.best else 0,
                                             self.worst.fitness if self.worst else 0,
                                             sum(ind.fitness for ind in self.population.individuals) / len(self.population.individuals) if self.population.individuals else 0,

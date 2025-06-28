@@ -30,6 +30,8 @@ The goal is to guide a knight to visit as many unique tiles as possible, avoidin
 
 - `assets/` - provides the graphical assets and fonts
 - `results/` - contains json dumps of knight tours
+  - `results/` contains averages calculated from acumulating runs
+  - `results/<date>_gen_doc_<details>` contains documentation for each generation of a run, as well as the accumulated runs
 
 ## Fitness Evaluation
 

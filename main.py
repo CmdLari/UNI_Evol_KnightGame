@@ -9,8 +9,8 @@ from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
-    BOARD_SIZE = 8
-    NUMBER_OF_RUNS = 3
+    BOARD_SIZE = 4
+    NUMBER_OF_RUNS = 2
     DOCUMENT_GENERATIONS: bool = True
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     for _ in range(game.NUMBER_OF_RUNS):
         game.solve_with_de()
         # Save results to JSON for later analysis
-        full_path = save_results_to_json(f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT*game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json", {
+        full_path = save_results_to_json(game,{
             "board_size": game.BOARD_HEIGHT * game.BOARD_WIDTH,
             "obstacles": game.OBSTACLES,
             "population_size": game.POPULATION_SIZE,

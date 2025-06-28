@@ -1,0 +1,1442 @@
+{
+    "1": {
+        "best_fitness": -2225,
+        "best_fitness_per_step": -27.8125,
+        "worst_fitness": -2306,
+        "worst_fitness_per_step": -28.825,
+        "average_fitness": -2243.75,
+        "average_fitness_per_step": -28.046875,
+        "best_attempted_moves_nr": 80
+    },
+    "2": {
+        "best_fitness": -2219,
+        "best_fitness_per_step": -27.7375,
+        "worst_fitness": -2267,
+        "worst_fitness_per_step": -28.3375,
+        "average_fitness": -2236.8125,
+        "average_fitness_per_step": -27.96015625,
+        "best_attempted_moves_nr": 80
+    },
+    "3": {
+        "best_fitness": -2219,
+        "best_fitness_per_step": -27.7375,
+        "worst_fitness": -2255,
+        "worst_fitness_per_step": -28.1875,
+        "average_fitness": -2235.6875,
+        "average_fitness_per_step": -27.94609375,
+        "best_attempted_moves_nr": 80
+    },
+    "4": {
+        "best_fitness": -2207,
+        "best_fitness_per_step": -27.5875,
+        "worst_fitness": -2255,
+        "worst_fitness_per_step": -28.1875,
+        "average_fitness": -2231.0,
+        "average_fitness_per_step": -27.8875,
+        "best_attempted_moves_nr": 80
+    },
+    "5": {
+        "best_fitness": -2207,
+        "best_fitness_per_step": -27.5875,
+        "worst_fitness": -2249,
+        "worst_fitness_per_step": -28.1125,
+        "average_fitness": -2228.9375,
+        "average_fitness_per_step": -27.86171875,
+        "best_attempted_moves_nr": 80
+    },
+    "6": {
+        "best_fitness": -2207,
+        "best_fitness_per_step": -27.5875,
+        "worst_fitness": -2249,
+        "worst_fitness_per_step": -28.1125,
+        "average_fitness": -2227.0625,
+        "average_fitness_per_step": -27.83828125,
+        "best_attempted_moves_nr": 80
+    },
+    "7": {
+        "best_fitness": -2207,
+        "best_fitness_per_step": -27.5875,
+        "worst_fitness": -2249,
+        "worst_fitness_per_step": -28.1125,
+        "average_fitness": -2227.0625,
+        "average_fitness_per_step": -27.83828125,
+        "best_attempted_moves_nr": 80
+    },
+    "8": {
+        "best_fitness": -2207,
+        "best_fitness_per_step": -27.5875,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2226.125,
+        "average_fitness_per_step": -27.8265625,
+        "best_attempted_moves_nr": 80
+    },
+    "9": {
+        "best_fitness": -964,
+        "best_fitness_per_step": -12.05,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2146.1875,
+        "average_fitness_per_step": -26.82734375,
+        "best_attempted_moves_nr": 77
+    },
+    "10": {
+        "best_fitness": -964,
+        "best_fitness_per_step": -12.05,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2145.25,
+        "average_fitness_per_step": -26.815625,
+        "best_attempted_moves_nr": 77
+    },
+    "11": {
+        "best_fitness": -964,
+        "best_fitness_per_step": -12.05,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2145.25,
+        "average_fitness_per_step": -26.815625,
+        "best_attempted_moves_nr": 77
+    },
+    "12": {
+        "best_fitness": -964,
+        "best_fitness_per_step": -12.05,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2143.9375,
+        "average_fitness_per_step": -26.79921875,
+        "best_attempted_moves_nr": 77
+    },
+    "13": {
+        "best_fitness": -964,
+        "best_fitness_per_step": -12.05,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -2143.9375,
+        "average_fitness_per_step": -26.79921875,
+        "best_attempted_moves_nr": 77
+    },
+    "14": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -1898.25,
+        "average_fitness_per_step": -23.728125,
+        "best_attempted_moves_nr": 48
+    },
+    "15": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -1771.3125,
+        "average_fitness_per_step": -22.14140625,
+        "best_attempted_moves_nr": 48
+    },
+    "16": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -1771.3125,
+        "average_fitness_per_step": -22.14140625,
+        "best_attempted_moves_nr": 48
+    },
+    "17": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -1770.75,
+        "average_fitness_per_step": -22.134375,
+        "best_attempted_moves_nr": 48
+    },
+    "18": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2246,
+        "worst_fitness_per_step": -28.075,
+        "average_fitness": -1677.875,
+        "average_fitness_per_step": -20.9734375,
+        "best_attempted_moves_nr": 48
+    },
+    "19": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2234,
+        "worst_fitness_per_step": -27.925,
+        "average_fitness": -1676.0,
+        "average_fitness_per_step": -20.95,
+        "best_attempted_moves_nr": 48
+    },
+    "20": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2234,
+        "worst_fitness_per_step": -27.925,
+        "average_fitness": -1676.0,
+        "average_fitness_per_step": -20.95,
+        "best_attempted_moves_nr": 48
+    },
+    "21": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1548.3125,
+        "average_fitness_per_step": -19.35390625,
+        "best_attempted_moves_nr": 48
+    },
+    "22": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1548.3125,
+        "average_fitness_per_step": -19.35390625,
+        "best_attempted_moves_nr": 48
+    },
+    "23": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1548.3125,
+        "average_fitness_per_step": -19.35390625,
+        "best_attempted_moves_nr": 48
+    },
+    "24": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1547.0,
+        "average_fitness_per_step": -19.3375,
+        "best_attempted_moves_nr": 48
+    },
+    "25": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1547.0,
+        "average_fitness_per_step": -19.3375,
+        "best_attempted_moves_nr": 48
+    },
+    "26": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1407.625,
+        "average_fitness_per_step": -17.5953125,
+        "best_attempted_moves_nr": 48
+    },
+    "27": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1407.25,
+        "average_fitness_per_step": -17.590625,
+        "best_attempted_moves_nr": 48
+    },
+    "28": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2225,
+        "worst_fitness_per_step": -27.8125,
+        "average_fitness": -1407.0625,
+        "average_fitness_per_step": -17.58828125,
+        "best_attempted_moves_nr": 48
+    },
+    "29": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2222,
+        "worst_fitness_per_step": -27.775,
+        "average_fitness": -1406.3125,
+        "average_fitness_per_step": -17.57890625,
+        "best_attempted_moves_nr": 48
+    },
+    "30": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2222,
+        "worst_fitness_per_step": -27.775,
+        "average_fitness": -1405.9375,
+        "average_fitness_per_step": -17.57421875,
+        "best_attempted_moves_nr": 48
+    },
+    "31": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2222,
+        "worst_fitness_per_step": -27.775,
+        "average_fitness": -1405.9375,
+        "average_fitness_per_step": -17.57421875,
+        "best_attempted_moves_nr": 48
+    },
+    "32": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2222,
+        "worst_fitness_per_step": -27.775,
+        "average_fitness": -1405.0,
+        "average_fitness_per_step": -17.5625,
+        "best_attempted_moves_nr": 48
+    },
+    "33": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2219,
+        "worst_fitness_per_step": -27.7375,
+        "average_fitness": -1404.625,
+        "average_fitness_per_step": -17.5578125,
+        "best_attempted_moves_nr": 48
+    },
+    "34": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2219,
+        "worst_fitness_per_step": -27.7375,
+        "average_fitness": -1404.625,
+        "average_fitness_per_step": -17.5578125,
+        "best_attempted_moves_nr": 48
+    },
+    "35": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2216,
+        "worst_fitness_per_step": -27.7,
+        "average_fitness": -1404.4375,
+        "average_fitness_per_step": -17.55546875,
+        "best_attempted_moves_nr": 48
+    },
+    "36": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2216,
+        "worst_fitness_per_step": -27.7,
+        "average_fitness": -1404.25,
+        "average_fitness_per_step": -17.553125,
+        "best_attempted_moves_nr": 48
+    },
+    "37": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2216,
+        "worst_fitness_per_step": -27.7,
+        "average_fitness": -1404.25,
+        "average_fitness_per_step": -17.553125,
+        "best_attempted_moves_nr": 48
+    },
+    "38": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2216,
+        "worst_fitness_per_step": -27.7,
+        "average_fitness": -1271.4375,
+        "average_fitness_per_step": -15.89296875,
+        "best_attempted_moves_nr": 48
+    },
+    "39": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "40": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "41": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "42": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "43": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "44": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1191.5,
+        "average_fitness_per_step": -14.89375,
+        "best_attempted_moves_nr": 48
+    },
+    "45": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.875,
+        "average_fitness_per_step": -13.0484375,
+        "best_attempted_moves_nr": 48
+    },
+    "46": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "47": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "48": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "49": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "50": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "51": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "52": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "53": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "54": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "55": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "56": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "57": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "58": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "59": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "60": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "61": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "62": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "63": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "64": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1043.3125,
+        "average_fitness_per_step": -13.04140625,
+        "best_attempted_moves_nr": 48
+    },
+    "65": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "66": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "67": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "68": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "69": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "70": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -1041.8125,
+        "average_fitness_per_step": -13.02265625,
+        "best_attempted_moves_nr": 48
+    },
+    "71": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "72": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "73": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "74": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "75": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "76": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "77": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "78": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "79": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "80": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "81": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -940.5,
+        "average_fitness_per_step": -11.75625,
+        "best_attempted_moves_nr": 48
+    },
+    "82": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -893.4375,
+        "average_fitness_per_step": -11.16796875,
+        "best_attempted_moves_nr": 48
+    },
+    "83": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -893.4375,
+        "average_fitness_per_step": -11.16796875,
+        "best_attempted_moves_nr": 48
+    },
+    "84": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -893.4375,
+        "average_fitness_per_step": -11.16796875,
+        "best_attempted_moves_nr": 48
+    },
+    "85": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2213,
+        "worst_fitness_per_step": -27.6625,
+        "average_fitness": -892.875,
+        "average_fitness_per_step": -11.1609375,
+        "best_attempted_moves_nr": 48
+    },
+    "86": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "87": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "88": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "89": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "90": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "91": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "92": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "93": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "94": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "95": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -734.1875,
+        "average_fitness_per_step": -9.17734375,
+        "best_attempted_moves_nr": 48
+    },
+    "96": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "97": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "98": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "99": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "100": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "101": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "102": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "103": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "104": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "105": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "106": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -607.4375,
+        "average_fitness_per_step": -7.59296875,
+        "best_attempted_moves_nr": 48
+    },
+    "107": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -602.75,
+        "average_fitness_per_step": -7.534375,
+        "best_attempted_moves_nr": 48
+    },
+    "108": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -602.75,
+        "average_fitness_per_step": -7.534375,
+        "best_attempted_moves_nr": 48
+    },
+    "109": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -602.75,
+        "average_fitness_per_step": -7.534375,
+        "best_attempted_moves_nr": 48
+    },
+    "110": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -602.75,
+        "average_fitness_per_step": -7.534375,
+        "best_attempted_moves_nr": 48
+    },
+    "111": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -602.75,
+        "average_fitness_per_step": -7.534375,
+        "best_attempted_moves_nr": 48
+    },
+    "112": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -585.75,
+        "average_fitness_per_step": -7.321875,
+        "best_attempted_moves_nr": 48
+    },
+    "113": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -585.75,
+        "average_fitness_per_step": -7.321875,
+        "best_attempted_moves_nr": 48
+    },
+    "114": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -585.75,
+        "average_fitness_per_step": -7.321875,
+        "best_attempted_moves_nr": 48
+    },
+    "115": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2207,
+        "worst_fitness_per_step": -27.5875,
+        "average_fitness": -585.75,
+        "average_fitness_per_step": -7.321875,
+        "best_attempted_moves_nr": 48
+    },
+    "116": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "117": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "118": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "119": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "120": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "121": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "122": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "123": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "124": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "125": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "126": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "127": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "128": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "129": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "130": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "131": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -401.0625,
+        "average_fitness_per_step": -5.01328125,
+        "best_attempted_moves_nr": 48
+    },
+    "132": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "133": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "134": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "135": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "136": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "137": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "138": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "139": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -306.75,
+        "average_fitness_per_step": -3.834375,
+        "best_attempted_moves_nr": 48
+    },
+    "140": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "141": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "142": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "143": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "144": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "145": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "146": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "147": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "148": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "149": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "150": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -303.875,
+        "average_fitness_per_step": -3.7984375,
+        "best_attempted_moves_nr": 48
+    },
+    "151": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -263.25,
+        "average_fitness_per_step": -3.290625,
+        "best_attempted_moves_nr": 48
+    },
+    "152": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -263.25,
+        "average_fitness_per_step": -3.290625,
+        "best_attempted_moves_nr": 48
+    },
+    "153": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -224.75,
+        "average_fitness_per_step": -2.809375,
+        "best_attempted_moves_nr": 48
+    },
+    "154": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -224.75,
+        "average_fitness_per_step": -2.809375,
+        "best_attempted_moves_nr": 48
+    },
+    "155": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -224.75,
+        "average_fitness_per_step": -2.809375,
+        "best_attempted_moves_nr": 48
+    },
+    "156": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -224.75,
+        "average_fitness_per_step": -2.809375,
+        "best_attempted_moves_nr": 48
+    },
+    "157": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -224.75,
+        "average_fitness_per_step": -2.809375,
+        "best_attempted_moves_nr": 48
+    },
+    "158": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -201.0625,
+        "average_fitness_per_step": -2.51328125,
+        "best_attempted_moves_nr": 48
+    },
+    "159": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -201.0625,
+        "average_fitness_per_step": -2.51328125,
+        "best_attempted_moves_nr": 48
+    },
+    "160": {
+        "best_fitness": 475,
+        "best_fitness_per_step": 5.9375,
+        "worst_fitness": -2198,
+        "worst_fitness_per_step": -27.475,
+        "average_fitness": -201.0625,
+        "average_fitness_per_step": -2.51328125,
+        "best_attempted_moves_nr": 48
+    }
+}

@@ -43,9 +43,11 @@ def draw_board(screen, board, knight, ctr) -> None:
     board.visited_tiles.append(knight.visited_tiles[ctr])
     knight.draw_knight(screen)
 
-def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
+def save_results_to_json(game, new_result: Dict[str, float]) -> None:
     """Append a result dict to a JSON file using the next available integer key."""
-    results_path = f"results/gen_doc/{datetime.now().date()}"
+    filename = f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json"
+
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -73,9 +75,9 @@ def save_results_to_json(filename: str, new_result: Dict[str, float]) -> None:
 
     return full_path
 
-def document_generation_in_json(filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int, steps:int) -> None:
+def document_generation_in_json(de, filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int, steps:int) -> None:
     """Document the parameters of the generation in a JSON file."""
-    results_path = f"results/gen_doc/{datetime.now().date()}"
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{de.board.width*de.board.height}-OBSTACLES_{de.board.obstacles}-POP_{de.pop_size}-GEN_{de.generations}-STEPSIZE_{de.stepsize_param}-CR_{de.crossover_rate}-STEPS_{de.steps}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -110,7 +112,7 @@ def document_generation_in_json(filename:str, best_fitness:int, worst_fitness:in
 
 def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     """Plot fitness over generations from a JSON file."""
-    results_path = f"results/gen_doc/{datetime.now().date()}"
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{diff_evolution.board.width*diff_evolution.board.height}-OBSTACLES_{diff_evolution.board.obstacles}-POP_{diff_evolution.pop_size}-GEN_{diff_evolution.generations}-STEPSIZE_{diff_evolution.stepsize_param}-CR_{diff_evolution.crossover_rate}-STEPS_{diff_evolution.steps}"
     full_path = os.path.join(results_path, filename)
 
     if not os.path.exists(full_path):
@@ -158,7 +160,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     # plt.show()
 
 
-def process_accumulated_runs(full_path: str = "results/gen_doc/2025-06-28/2025-06-28_BOARD_64-OBSTACLES_True-POP_64-GEN_640-STEPSIZE_0.5-CR_0.9-STEPS_320.json"):
+def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOARD_64-OBSTACLES_True-POP_64-GEN_640-STEPSIZE_0.5-CR_0.9-STEPS_320.json"):
     """Process all runs in a result.json and save aggregate statistics."""
     if not os.path.exists(full_path):
         print(f"File not found: {full_path}")
@@ -183,7 +185,7 @@ def process_accumulated_runs(full_path: str = "results/gen_doc/2025-06-28/2025-0
     averaged_results = {key: value / count for key, value in accumulator.items()}
 
     # Save .avg file
-    avg_dir = "results/avg"
+    avg_dir = f"results/"
     os.makedirs(avg_dir, exist_ok=True)
 
     base_filename = os.path.basename(full_path).replace(".json", ".avg.json")
