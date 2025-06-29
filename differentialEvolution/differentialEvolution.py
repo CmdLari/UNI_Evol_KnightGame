@@ -29,39 +29,25 @@ class DifferentialEvolution:
 
         for _ in range(self.generations):
             new_population = []
+            all_indices = list(range(self.pop_size))
 
             if not self.elitism:
                 for i, target in enumerate(self.population.individuals):
-                    # --- Mutation (rand/1) ---
-                    indices = list(range(self.pop_size))
-                    indices.remove(i)
-                    r1, r2, r3 = random.sample(indices, 3)
-                    x1 = self.population.individuals[r1].vector
-                    x2 = self.population.individuals[r2].vector
-                    x3 = self.population.individuals[r3].vector
+                    self.mutation_crossover_evaluation_selection(i, target, new_population, all_indices)
 
-                    mutant = [
-                        max(0.0, min(1.0, x1[j] + self.stepsize_param * (x2[j] - x3[j])))
-                        for j in range(self.steps)
-                    ]
-
-                    # --- Crossover ---
-                    trial_vector = [
-                        mutant[j] if random.random() < self.crossover_rate else target.vector[j]
-                        for j in range(self.steps)
-                    ]
-
-                    # --- Evaluation ---
-                    trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height, self.board)
-                    trial.evaluate(self.board)
-
-                    # --- Selection ---
-                    if trial.fitness > target.fitness:
-                        new_population.append(trial)
-                    else:
-                        new_population.append(target)
-                else:
-                    pass
+            else:
+                population_sorted = sorted(self.population.individuals, key=lambda x: x.fitness, reverse=True)
+                elite_population = population_sorted[:int(self.pop_size * self.elitism_rate)]
+                ctr = 0
+                while ctr < (self.pop_size * self.elitism_rate)-1:
+                    new_population.append(elite_population[ctr])
+                    ctr += 1
+                while ctr < self.pop_size:
+                    for i, target in enumerate(self.population.individuals):
+                        self.mutation_crossover_evaluation_selection(i, target, new_population, all_indices)
+                        ctr += 1
+                        if ctr == self.pop_size-1:
+                            break
 
             self.population.individuals = new_population
 
@@ -75,3 +61,30 @@ class DifferentialEvolution:
                                             sum(ind.fitness for ind in self.population.individuals) / len(self.population.individuals) if self.population.individuals else 0,
                                             self.best.attempted_moves if self.best else 0,
                                             self.steps)
+
+    def mutation_crossover_evaluation_selection(self, i, target, new_population, all_indices):
+        r1, r2, r3 = random.sample([x for x in all_indices if x != i], 3)
+        x1 = self.population.individuals[r1].vector
+        x2 = self.population.individuals[r2].vector
+        x3 = self.population.individuals[r3].vector
+
+        mutant = [
+            max(0.0, min(1.0, x1[j] + self.stepsize_param * (x2[j] - x3[j])))
+            for j in range(self.steps)
+        ]
+
+        # --- Crossover ---
+        trial_vector = [
+            mutant[j] if random.random() < self.crossover_rate else target.vector[j]
+            for j in range(self.steps)
+        ]
+
+        # --- Evaluation ---
+        trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height, self.board)
+        trial.evaluate(self.board)
+
+        # --- Selection ---
+        if trial.fitness > target.fitness:
+            new_population.append(trial)
+        else:
+            new_population.append(target)

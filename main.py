@@ -10,10 +10,10 @@ from differentialEvolution.differentialEvolution import Individual
 from differentialEvolution.differentialEvolution import DifferentialEvolution
 
 class Main:
-    BOARD_SIZE = 8
-    NUMBER_OF_RUNS = 5
-    DOCUMENT_GENERATIONS: bool = True
-    SHOW_PONY: bool = True
+    BOARD_SIZE = 4
+    NUMBER_OF_RUNS = 3
+    DOCUMENT_GENERATIONS: bool = False
+    SHOW_PONY: bool = False
     def __init__(self) -> None:
         '''Initialize the main game with a board and a knight'''
         pygame.init()
@@ -23,7 +23,7 @@ class Main:
         self.BOARD_HEIGHT = self.BOARD_SIZE
         self.OBSTACLES: bool = False
         self.ELITISM: bool = False
-        self.ELITISM_RATE: float = 0.3
+        self.ELITISM_RATE: float = 0.1
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.STEPSIZE_PARAM = 0.5
@@ -132,7 +132,7 @@ if __name__ == "__main__":
         # plot fitness of ONE de
         if game.DOCUMENT_GENERATIONS:
             plot_fitness_over_generations(game.de.filename, game.de)
-        game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS)
+        game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS, game.ELITISM, game.ELITISM_RATE)
     end = time.time()
     # reduce time to minute (3 floating point)
     time_in_minutes = round((end - start) / 60, 3)

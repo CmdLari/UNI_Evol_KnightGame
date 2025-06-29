@@ -45,9 +45,9 @@ def draw_board(screen, board, knight, ctr) -> None:
 
 def save_results_to_json(game, new_result: Dict[str, float]) -> None:
     """Append a result dict to a JSON file using the next available integer key."""
-    filename = f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}.json"
+    filename = f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}.json"
 
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}"
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -77,7 +77,7 @@ def save_results_to_json(game, new_result: Dict[str, float]) -> None:
 
 def document_generation_in_json(de, filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int, steps:int) -> None:
     """Document the parameters of the generation in a JSON file."""
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{de.board.width*de.board.height}-OBSTACLES_{de.board.obstacles}-POP_{de.pop_size}-GEN_{de.generations}-STEPSIZE_{de.stepsize_param}-CR_{de.crossover_rate}-STEPS_{de.steps}"
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{de.board.width*de.board.height}-OBSTACLES_{de.board.obstacles}-POP_{de.pop_size}-GEN_{de.generations}-STEPSIZE_{de.stepsize_param}-CR_{de.crossover_rate}-STEPS_{de.steps}-{de.elitism}-{de.elitism_rate}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -112,7 +112,7 @@ def document_generation_in_json(de, filename:str, best_fitness:int, worst_fitnes
 
 def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     """Plot fitness over generations from a JSON file."""
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{diff_evolution.board.width*diff_evolution.board.height}-OBSTACLES_{diff_evolution.board.obstacles}-POP_{diff_evolution.pop_size}-GEN_{diff_evolution.generations}-STEPSIZE_{diff_evolution.stepsize_param}-CR_{diff_evolution.crossover_rate}-STEPS_{diff_evolution.steps}"
+    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{diff_evolution.board.width*diff_evolution.board.height}-OBSTACLES_{diff_evolution.board.obstacles}-POP_{diff_evolution.pop_size}-GEN_{diff_evolution.generations}-STEPSIZE_{diff_evolution.stepsize_param}-CR_{diff_evolution.crossover_rate}-STEPS_{diff_evolution.steps}-{diff_evolution.elitism}-{diff_evolution.elitism_rate}"
     full_path = os.path.join(results_path, filename)
 
     if not os.path.exists(full_path):
@@ -138,7 +138,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
 
     plt.xlabel('Generation')
     plt.ylabel('Fitness')
-    plt.title(f'FITNESS OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps})')
+    plt.title(f'FITNESS OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps}, Elitism: {diff_evolution.elitism}, Elitism Rate: {diff_evolution.elitism_rate})')
     plt.legend()
     plt.grid()
     plt.ylim(min(worst_fitness) - 1000, max(best_fitness) + 1000)
@@ -152,7 +152,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
 
     plt.xlabel('Generation')
     plt.ylabel('Fitness')
-    plt.title(f'AVG FITNESS / STEP OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps})')
+    plt.title(f'AVG FITNESS / STEP OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps}, Elitism: {diff_evolution.elitism}, Elitism Rate: {diff_evolution.elitism_rate})')
     plt.legend()
     plt.grid()
     plt.ylim(min(worst_fitness_per_step) - 50, max(best_fitness_per_step) + 50)
@@ -160,7 +160,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     # plt.show()
 
 
-def process_accumulated_runs(full_path: str = "results/2025-06-28/2025-06-28_BOARD_64-OBSTACLES_True-POP_64-GEN_640-STEPSIZE_0.5-CR_0.9-STEPS_320.json", time_per_run: Optional[float] = None) -> Dict[str, float]:
+def process_accumulated_runs(full_path: str = "result", time_per_run: Optional[float] = None) -> Dict[str, float]:
     """Process all runs in a result.json and save aggregate statistics."""
     if not os.path.exists(full_path):
         print(f"File not found: {full_path}")
