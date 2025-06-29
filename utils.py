@@ -44,7 +44,7 @@ def draw_board(screen, board, knight, ctr) -> None:
 
 def save_results_to_json(game, new_result: Dict[str, float]) -> None:
     """Append a result dict to a JSON file using the next available integer key."""
-    filename = f"gen_doc_BOARD_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}.json"
+    filename = f"gen_doc_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}.json"
 
     results_path = f"results/runs/"
     os.makedirs(results_path, exist_ok=True)
@@ -159,7 +159,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     # plt.show()
 
 
-def process_accumulated_runs(game, full_path: str = "result", time_per_run: Optional[float] = None) -> Dict[str, float]:
+def process_accumulated_runs(game, full_path: str = "result", time_per_run: Optional[float] = None, solved = False) -> Dict[str, float]:
     """Process all runs in a result.json and save aggregate statistics."""
     if not os.path.exists(full_path):
         print(f"File not found: {full_path}")
@@ -189,7 +189,7 @@ def process_accumulated_runs(game, full_path: str = "result", time_per_run: Opti
     avg_dir = f"results/"
     os.makedirs(avg_dir, exist_ok=True)
 
-    base_filename = os.path.basename(full_path).replace(".json", f"_runs-{count_runs}_avg.json")
+    base_filename = os.path.basename(full_path).replace(".json", f"_runs-{count_runs}_avg_{solved}.json")
     avg_file = os.path.join(avg_dir, base_filename)
     with open(avg_file, "w") as outfile:
         json.dump(averaged_results, outfile, indent=4)
@@ -205,6 +205,6 @@ def process_accumulated_runs(game, full_path: str = "result", time_per_run: Opti
     plt.grid(axis='y')
     plt.tight_layout()
     plt.savefig(avg_file.replace('.json', '_fitness_per_step_plot.png'))
-    print(f"Plot saved to {full_path.replace('.json', '_fitness_per_step_plot_runs-{count_runs}.png')}")
+    print(f"Plot saved to {full_path.replace('.json', f'_fitness_per_step_plot_runs-{count_runs}.png')}")
 
     return averaged_results

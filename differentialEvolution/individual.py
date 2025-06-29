@@ -34,20 +34,22 @@ class Individual:
             dx, dy = self.knight_moves[move_idx]
             new_x = self.position[0] + dx
             new_y = self.position[1] + dy
+            new_position = [new_x, new_y]
 
             if 0 <= new_x < self.board_width and 0 <= new_y < self.board_height:
                 tile = board.matrix[new_y][new_x]
                 if not tile.is_obstacle:
-                    self.position = [new_x, new_y]
-                    tile = board.matrix[new_y][new_x]
-                    self.fitness += 1  # Reward for valid move
+                    self.fitness += 1  
+                    if new_position not in self.visited_tiles:
+                        self.visited_tiles.append(self.position.copy())
+                        self.position = new_position
+                        tile = board.matrix[new_y][new_x]
+                        self.fitness += 10 # Reward for valid move
+                    else:
+                        self.fitness -= 2
                 else:
                     self.fitness -= 2
-                if self.position not in self.visited_tiles:
-                    self.visited_tiles.append(self.position.copy())
-                    self.fitness += 10
-                else:
-                    self.fitness -= 2
+                
             else:
                 self.fitness -= 4  # Strong penalty for going off board
 

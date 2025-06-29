@@ -2,6 +2,7 @@ import csv
 import subprocess
 
 CSV_PATH = 'BatchConditions.csv'
+RUN_ONLY_NON_OBSTACLE_CASES = False  # Set to False to only run entries where obstacles is True
 
 def parse_value(val: str, board_size: int) -> int | float | bool:
     val = val.strip().upper()
@@ -35,6 +36,12 @@ for row in data_rows:
     elitism = parse_value(row[7], board_size)
     elitism_rate = parse_value(row[8], board_size)
 
+    # Conditional skip based on obstacle switch
+    if RUN_ONLY_NON_OBSTACLE_CASES and obstacles:
+        continue
+    if not RUN_ONLY_NON_OBSTACLE_CASES and not obstacles:
+        continue
+
     cmd = [
         'python', 'main.py',
         '--BOARD_SIZE', str(board_size),
@@ -46,7 +53,7 @@ for row in data_rows:
         '--OBSTACLES', str(obstacles),
         '--ELITISM', str(elitism),
         '--ELITISM_RATE', str(elitism_rate),
-        '--NUMBER_OF_RUNS', '100',
+        '--NUMBER_OF_RUNS', '1',
         '--DOCUMENT_GENERATIONS', 'False',
         '--SHOW_PONY', 'False'
     ]

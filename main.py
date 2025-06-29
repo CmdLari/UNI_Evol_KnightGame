@@ -17,7 +17,7 @@ def str2bool(v):
 class Main:
 
     def __init__(self, BOARD_SIZE: int = 4, NUMBER_OF_RUNS: int = 100, 
-                 DOCUMENT_GENERATIONS: bool = False, SHOW_PONY: bool = False, 
+                 DOCUMENT_GENERATIONS: bool = False, SHOW_PONY: bool = True, 
                  CROSSOVER_RATE: float = 0.9, STEPSIZE_PARAM: float = 0.5, OBSTACLES: bool = False, 
                  ELITISM: bool = False, ELITISM_RATE: float = 0.1, POPULATION_SIZE: int = 100, 
                  GENERATIONS: int = 100, STEPS: int = 100) -> None:
@@ -113,8 +113,8 @@ class Main:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--BOARD_SIZE", type=int, default=4)
-    parser.add_argument("--NUMBER_OF_RUNS", type=int, default=100)
+    parser.add_argument("--BOARD_SIZE", type=int, default=16)
+    parser.add_argument("--NUMBER_OF_RUNS", type=int, default=10)
     parser.add_argument("--DOCUMENT_GENERATIONS", type=str2bool, default=False)
     parser.add_argument("--SHOW_PONY", type=str2bool, default=False)
     parser.add_argument("--CROSSOVER_RATE", type=float, default=0.9)
@@ -159,13 +159,15 @@ if __name__ == "__main__":
         if game.DOCUMENT_GENERATIONS:
             plot_fitness_over_generations(game.de.filename, game.de)
 
+        solved = len(game.de.best.visited_tiles) == game.BOARD_SIZE
+        print(game.de.best.visited_tiles)
         game.de = DifferentialEvolution(game.POPULATION_SIZE, game.board, game.GENERATIONS, game.STEPSIZE_PARAM, game.CROSSOVER_RATE, game.STEPS, game.ELITISM, game.ELITISM_RATE)
 
     end = time.time()
     time_in_minutes = round((end - start) / 60, 3)
     time_per_run = round(time_in_minutes / game.NUMBER_OF_RUNS, 3)
 
-    process_accumulated_runs(game, full_path, time_per_run)
+    process_accumulated_runs(game, full_path, time_per_run, solved)
 
     if game.SHOW_PONY:
         game.visualize()
