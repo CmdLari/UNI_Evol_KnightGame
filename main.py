@@ -22,6 +22,8 @@ class Main:
         self.BOARD_WIDTH = self.BOARD_SIZE
         self.BOARD_HEIGHT = self.BOARD_SIZE
         self.OBSTACLES: bool = False
+        self.ELITISM: bool = False
+        self.ELITISM_RATE: float = 0.3
         self.POPULATION_SIZE: int = self.BOARD_WIDTH * self.BOARD_HEIGHT
         self.GENERATIONS: int = self.BOARD_WIDTH * self.BOARD_HEIGHT * 10
         self.STEPSIZE_PARAM = 0.5
@@ -39,7 +41,7 @@ class Main:
         ## SHOW PONY ##
         self.knight: Individual = None
 
-        self.de = DifferentialEvolution(self.POPULATION_SIZE, self.board, self.GENERATIONS, self.STEPSIZE_PARAM, self.CROSSOVER_RATE, self.STEPS)
+        self.de = DifferentialEvolution(self.POPULATION_SIZE, self.board, self.GENERATIONS, self.STEPSIZE_PARAM, self.CROSSOVER_RATE, self.STEPS, self.ELITISM, self.ELITISM_RATE)
         self.best_path = []
         self.current_step = 0
         self.is_over: bool = False

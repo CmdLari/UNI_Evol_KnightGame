@@ -7,11 +7,13 @@ from differentialEvolution.individual import Individual
 from utils import document_generation_in_json
 
 class DifferentialEvolution:
-    def __init__(self, pop_size, board, generations, stepsize_param, crossover_rate, steps):
+    def __init__(self, pop_size, board, generations, stepsize_param, crossover_rate, steps, elitism, elitism_rate=0.3):
         self.pop_size = pop_size
         self.generations = generations
         self.crossover_rate = crossover_rate
         self.stepsize_param = stepsize_param
+        self.elitism = elitism
+        self.elitism_rate = elitism_rate
         self.board = board
         self.population = Population(pop_size, board, steps)
         self.steps = steps
@@ -28,35 +30,38 @@ class DifferentialEvolution:
         for _ in range(self.generations):
             new_population = []
 
-            for i, target in enumerate(self.population.individuals):
-                # --- Mutation (rand/1) ---
-                indices = list(range(self.pop_size))
-                indices.remove(i)
-                r1, r2, r3 = random.sample(indices, 3)
-                x1 = self.population.individuals[r1].vector
-                x2 = self.population.individuals[r2].vector
-                x3 = self.population.individuals[r3].vector
+            if not self.elitism:
+                for i, target in enumerate(self.population.individuals):
+                    # --- Mutation (rand/1) ---
+                    indices = list(range(self.pop_size))
+                    indices.remove(i)
+                    r1, r2, r3 = random.sample(indices, 3)
+                    x1 = self.population.individuals[r1].vector
+                    x2 = self.population.individuals[r2].vector
+                    x3 = self.population.individuals[r3].vector
 
-                mutant = [
-                    max(0.0, min(1.0, x1[j] + self.stepsize_param * (x2[j] - x3[j])))
-                    for j in range(self.steps)
-                ]
+                    mutant = [
+                        max(0.0, min(1.0, x1[j] + self.stepsize_param * (x2[j] - x3[j])))
+                        for j in range(self.steps)
+                    ]
 
-                # --- Crossover ---
-                trial_vector = [
-                    mutant[j] if random.random() < self.crossover_rate else target.vector[j]
-                    for j in range(self.steps)
-                ]
+                    # --- Crossover ---
+                    trial_vector = [
+                        mutant[j] if random.random() < self.crossover_rate else target.vector[j]
+                        for j in range(self.steps)
+                    ]
 
-                # --- Evaluation ---
-                trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height, self.board)
-                trial.evaluate(self.board)
+                    # --- Evaluation ---
+                    trial = Individual(trial_vector, target.starting_position, self.board.width, self.board.height, self.board)
+                    trial.evaluate(self.board)
 
-                # --- Selection ---
-                if trial.fitness > target.fitness:
-                    new_population.append(trial)
+                    # --- Selection ---
+                    if trial.fitness > target.fitness:
+                        new_population.append(trial)
+                    else:
+                        new_population.append(target)
                 else:
-                    new_population.append(target)
+                    pass
 
             self.population.individuals = new_population
 
