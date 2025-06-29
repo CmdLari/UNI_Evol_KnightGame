@@ -4,7 +4,6 @@ import os
 from typing import Optional, Tuple, Dict
 import numpy as np
 import matplotlib.pyplot as plt
-from datetime import datetime
 
 image_cache: Dict[str, pygame.Surface] = {}
 
@@ -45,9 +44,9 @@ def draw_board(screen, board, knight, ctr) -> None:
 
 def save_results_to_json(game, new_result: Dict[str, float]) -> None:
     """Append a result dict to a JSON file using the next available integer key."""
-    filename = f"{datetime.now().date()}_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}.json"
+    filename = f"gen_doc_BOARD_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}.json"
 
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{game.BOARD_HEIGHT * game.BOARD_WIDTH}-OBSTACLES_{game.OBSTACLES}-POP_{game.POPULATION_SIZE}-GEN_{game.GENERATIONS}-STEPSIZE_{game.STEPSIZE_PARAM}-CR_{game.CROSSOVER_RATE}-STEPS_{game.STEPS}-ELITISM_{game.ELITISM}-ELITISM_RATE_{game.ELITISM_RATE}"
+    results_path = f"results/runs/"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -77,7 +76,7 @@ def save_results_to_json(game, new_result: Dict[str, float]) -> None:
 
 def document_generation_in_json(de, filename:str, best_fitness:int, worst_fitness:int, average_fitness:float, best_attempted_moves:int, steps:int) -> None:
     """Document the parameters of the generation in a JSON file."""
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{de.board.width*de.board.height}-OBSTACLES_{de.board.obstacles}-POP_{de.pop_size}-GEN_{de.generations}-STEPSIZE_{de.stepsize_param}-CR_{de.crossover_rate}-STEPS_{de.steps}-{de.elitism}-{de.elitism_rate}"
+    results_path = f"results/gen_doc_BOARD_{de.board.width*de.board.height}-OBSTACLES_{de.board.obstacles}-POP_{de.pop_size}-GEN_{de.generations}-STEPSIZE_{de.stepsize_param}-CR_{de.crossover_rate}-STEPS_{de.steps}-{de.elitism}-{de.elitism_rate}"
     os.makedirs(results_path, exist_ok=True)
     full_path = os.path.join(results_path, filename)
 
@@ -112,7 +111,7 @@ def document_generation_in_json(de, filename:str, best_fitness:int, worst_fitnes
 
 def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     """Plot fitness over generations from a JSON file."""
-    results_path = f"results/{datetime.now().date()}_gen_doc_BOARD_{diff_evolution.board.width*diff_evolution.board.height}-OBSTACLES_{diff_evolution.board.obstacles}-POP_{diff_evolution.pop_size}-GEN_{diff_evolution.generations}-STEPSIZE_{diff_evolution.stepsize_param}-CR_{diff_evolution.crossover_rate}-STEPS_{diff_evolution.steps}-{diff_evolution.elitism}-{diff_evolution.elitism_rate}"
+    results_path = f"results/gen_doc_BOARD_{diff_evolution.board.width*diff_evolution.board.height}-OBSTACLES_{diff_evolution.board.obstacles}-POP_{diff_evolution.pop_size}-GEN_{diff_evolution.generations}-STEPSIZE_{diff_evolution.stepsize_param}-CR_{diff_evolution.crossover_rate}-STEPS_{diff_evolution.steps}-{diff_evolution.elitism}-{diff_evolution.elitism_rate}"
     full_path = os.path.join(results_path, filename)
 
     if not os.path.exists(full_path):
@@ -160,7 +159,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
     # plt.show()
 
 
-def process_accumulated_runs(full_path: str = "result", time_per_run: Optional[float] = None) -> Dict[str, float]:
+def process_accumulated_runs(game, full_path: str = "result", time_per_run: Optional[float] = None) -> Dict[str, float]:
     """Process all runs in a result.json and save aggregate statistics."""
     if not os.path.exists(full_path):
         print(f"File not found: {full_path}")
@@ -201,7 +200,7 @@ def process_accumulated_runs(full_path: str = "result", time_per_run: Optional[f
     keys_to_plot = ["best_fitness_per_step", "average_fitness_per_step", "worst_fitness_per_step"]
     values = [averaged_results[k] for k in keys_to_plot]
     plt.bar(keys_to_plot, values, color=['gold', 'teal', 'salmon'])
-    plt.title(f"Average Fitness per Step Across {count_runs} Runs\nOne run took {time_per_run} minutes")
+    plt.title(f"Average Fitness per Step Across {count_runs} Runs\nOne run took {time_per_run} minutes\nElitism: {game.ELITISM}")
     plt.ylabel("Fitness per Step")
     plt.grid(axis='y')
     plt.tight_layout()
