@@ -16,8 +16,8 @@ def str2bool(v):
 
 class Main:
 
-    def __init__(self, BOARD_SIZE: int = 4, NUMBER_OF_RUNS: int = 100, 
-                 DOCUMENT_GENERATIONS: bool = False, SHOW_PONY: bool = True, 
+    def __init__(self, BOARD_SIZE: int = 16, NUMBER_OF_RUNS: int = 10, 
+                 DOCUMENT_GENERATIONS: bool = False, SHOW_PONY: bool = False, 
                  CROSSOVER_RATE: float = 0.9, STEPSIZE_PARAM: float = 0.5, OBSTACLES: bool = False, 
                  ELITISM: bool = False, ELITISM_RATE: float = 0.1, POPULATION_SIZE: int = 100, 
                  GENERATIONS: int = 100, STEPS: int = 100) -> None:
@@ -113,26 +113,26 @@ class Main:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--BOARD_SIZE", type=int, default=64)
+    parser.add_argument("--BOARD_SIZE", type=int, default=16)
     parser.add_argument("--NUMBER_OF_RUNS", type=int, default=1)
     parser.add_argument("--DOCUMENT_GENERATIONS", type=str2bool, default=False)
-    parser.add_argument("--SHOW_PONY", type=str2bool, default=False)
+    parser.add_argument("--SHOW_PONY", type=str2bool, default=True)
     parser.add_argument("--CROSSOVER_RATE", type=float, default=0.9)
     parser.add_argument("--STEPSIZE_PARAM", type=float, default=0.5)
-    parser.add_argument("--OBSTACLES", type=str2bool, default=False)
+    parser.add_argument("--OBSTACLES", type=str2bool, default=True)
     parser.add_argument("--ELITISM", type=str2bool, default=True)
     parser.add_argument("--ELITISM_RATE", type=float, default=0.2)
     parser.add_argument("--POPULATION_SIZE", type=int, default=None)
-    parser.add_argument("--GENERATIONS", type=int, default=None)
+    parser.add_argument("--GENERATIONS", type=int, default=100)
     parser.add_argument("--STEPS", type=int, default=None)
     args = parser.parse_args()
 
     if args.POPULATION_SIZE is None:
         args.POPULATION_SIZE = args.BOARD_SIZE * 2
     if args.GENERATIONS is None:
-        args.GENERATIONS = args.BOARD_SIZE * 20
+        args.GENERATIONS = args.BOARD_SIZE * 10
     if args.STEPS is None:
-        args.STEPS = args.BOARD_SIZE * 3
+        args.STEPS = args.BOARD_SIZE * 10
 
     game = Main(**vars(args))
 
