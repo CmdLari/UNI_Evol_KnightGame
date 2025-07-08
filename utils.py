@@ -151,7 +151,7 @@ def plot_fitness_over_generations(filename: str, diff_evolution) -> None:
 
     plt.xlabel('Generation')
     plt.ylabel('Fitness')
-    plt.title(f'AVG FITNESS / STEP OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, Crossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps}, Elitism: {diff_evolution.elitism}, Elitism Rate: {diff_evolution.elitism_rate})')
+    plt.title(f'AVG FITNESS / STEP OVER GENERATIONS \n({diff_evolution.board.width}x{diff_evolution.board.height} Board, Obstacles: {diff_evolution.board.obstacles}, Population: {diff_evolution.pop_size}, Generations: {diff_evolution.generations}, Stepsize: {diff_evolution.stepsize_param}, \nCrossover Rate: {diff_evolution.crossover_rate}, Steps: {diff_evolution.steps}, Elitism: {diff_evolution.elitism}, Elitism Rate: {diff_evolution.elitism_rate})')
     plt.legend()
     plt.grid()
     plt.ylim(min(worst_fitness_per_step) - 50, max(best_fitness_per_step) + 50)

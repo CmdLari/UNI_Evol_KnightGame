@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 # Folder containing JSON files
-folder_path = "results/"
+folder_path = "results/144_Elitism/"
 
 # Regex pattern updated to ignore date
 filename_pattern = re.compile(

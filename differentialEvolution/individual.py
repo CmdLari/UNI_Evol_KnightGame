@@ -59,7 +59,7 @@ class Individual:
 
             # Reward for visiting all tiles
             if len(self.visited_tiles) == self.total_visitable:
-                self.fitness += 1000
+                self.fitness += 10000
                 break
 
         return self.fitness

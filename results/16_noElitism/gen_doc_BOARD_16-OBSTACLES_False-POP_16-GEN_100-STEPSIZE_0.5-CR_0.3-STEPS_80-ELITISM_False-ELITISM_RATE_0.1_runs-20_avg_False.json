@@ -1,0 +1,9 @@
+{
+    "best_fitness": -2103.75,
+    "worst_fitness": -2145.3,
+    "average_fitness": -2125.284375,
+    "best_fitness_per_step": -26.296875,
+    "worst_fitness_per_step": -26.816250000000004,
+    "average_fitness_per_step": -26.566054687500003,
+    "best_attempted_moves": 80.0
+}

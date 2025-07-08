@@ -13,7 +13,7 @@ The goal is to guide a knight to visit as many unique tiles as possible, avoidin
 
 ## Project Structure
 
-- `main.py` - Entry point for the application
+- `assets/` - provides the graphical assets and fonts
 
 - `chessset/` - Board and game logic
 
@@ -26,12 +26,19 @@ The goal is to guide a knight to visit as many unique tiles as possible, avoidin
   - `individual.py` - Individual representation with vector + fitness (represents the knight)
   - `population.py` - Manages a population of individuals
 
+- `results` - Directory to which all data evaluation is saved
+
+- `batch_runner.py` - reads from "BatchConditions.csv" - adjust this table to run batches with different parameters
+
+-`BatchConditions.csv` - Table with conditions for a test batch -> relevant for the batch runner
+
+- `main.py` - Entry point for the application
+
+- `results_to_csv.py` - created table with results from batch_runner output
+
 - `utils.py` - Image loading, tour visualisation, result dump
 
-- `assets/` - provides the graphical assets and fonts
-- `results/` - contains json dumps of knight tours
-  - `results/` contains averages calculated from acumulating runs
-  - `results/<date>_gen_doc_<details>` contains documentation for each generation of a run, as well as the accumulated runs
+- `visualize_compiled_data.py` - Visualizes output from results_to_csv.py
 
 ## Fitness Evaluation
 
@@ -56,8 +63,8 @@ Fitness is calculated based on:
 - **BOARD_SIZE:** Sets lenght AND width of board
 - **NUMBER_OF_RUNS:** How many times is a board solved by the DE
 - **DOCUMENT_GENERATIONS:** Is EVERY Generation of EVERY run documented (for graphs eg)
-- **BOARD_WIDTH:** Set to BOARD_SIZE (could be used for non square boards)
-- **BOARD_HEIGHT:** Set to BOARD_SIZE (could be used for non square boards)
+- **BOARD_WIDTH:** Set to root of BOARD_SIZE (could be used for non square boards)
+- **BOARD_HEIGHT:** Set to root of BOARD_SIZE (could be used for non square boards)
 - **POPULATION_SIZE:** number of individuals
 - **GENERATIONS:** evolution cycles
 - **CROSSOVER_RATE:** probability of mixing individuals
@@ -65,21 +72,3 @@ Fitness is calculated based on:
 - **STEPS:** number of moves per individual
 
 You can adjust these in main.py.
-
-## TO-DOs
-
-- Compare DE performance when varying **one parameter at a time**:
-
-  - Population size
-  - Number of generations
-  - Step size (`F`)
-  - Crossover rate (`CR`)
-  - Number of knight steps
-
-- Evaluate best configurations across:
-
-  - 3 different board sizes
-  - Obstacle mode: `obstacles = True`
-
-- Implement **elitism**
-- Repeat all above benchmarks with elitism enabled
